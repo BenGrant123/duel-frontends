@@ -1,0 +1,199 @@
+// Import Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: 'roboto_wf';
+    src: url('/static/fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('/static/fonts/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_wf';
+    src: url('/static/fonts/roboto/roboto-light-webfont.woff2') format('woff2'),
+         url('static/fonts/roboto/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_wf';
+    src: url('/static/fonts/roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('/static/fonts/roboto/roboto-medium-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media (min-width: 1350px) {
+	.container {
+		width: 90%;
+		max-width: none;
+	}
+}
+
+.col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-4-5 {
+	width: 100%;
+	float: left;
+}
+@media (min-width: 576px) {
+	.col-sm-2-5 {
+		width: 33.33%;
+		float: left;
+	}
+}
+@media (min-width: 768px) {
+	.col-md-2-5 {
+		width: 25%;
+		float: left;
+	}				
+}
+@media (min-width: 992px) {
+	.col-lg-1-5 {
+		width: 20%;
+		float: left;
+	}
+}
+@media (min-width: 1200px) {
+	.col-xl-1-5 {
+		width: 20%;
+		float: left;
+	}
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding-top: 100px;
+}
+
+body {
+  font-family: roboto_wf;
+  h1 {
+	font-size: 16px!important;
+	color: #222;
+  }
+  .bg-dark {
+  		background-color: #222!important;
+  }
+}
+
+header, footer {
+	font-size: 10px;
+	color: #fff;
+	.icon {
+	    display: inline-block;
+	    fill: currentColor;
+	    pointer-events: none;
+	    font-size: 10em;
+	}
+}
+
+header {
+	text-transform: uppercase;
+	.icon-duel {
+		width: 40px;
+	    height: 40px;
+	}
+}
+
+footer {
+	padding: 0.5rem 1rem;
+	width: 100%;
+  	height: 50px;
+	display: flex;
+	.left-items, .right-items {
+		display: flex;
+		align-items: center;
+	}
+	.right-items {
+		margin-left: auto;
+	}
+	.icon-duel-small {
+		margin-right: 1rem;
+		width: 26px;
+		height: 26px;
+	}
+	.copyright {
+		text-transform: uppercase;
+	}
+	.footer-link {
+		margin-left: 1rem;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+section {
+	padding-bottom: 2rem;
+}
+
+article {
+	position: relative;
+	margin-bottom: 6rem;
+	cursor: pointer;
+	&:hover {
+		.bg {
+			filter: grayscale(100%);
+		}
+		p {
+			display: block;
+		}
+	}
+	p {
+		display: none;
+	}
+	.logo {
+		height: 40px;
+		width: 40px;
+		top:0;
+		left:14px;
+		transform: translateY(-50%);
+		border: 2px solid #fff;
+		border-radius: 4px;
+	}
+	.bg {
+		border-radius: 8px;
+	}
+	h2 {
+		font-size: 14px;
+		top:0;
+		color: #444;
+		left:60px;
+		transform: translateY(-116%);
+	}
+	p, .logo, h2 {
+		position: absolute;
+		z-index: 1000;
+	}
+	.testimonial {
+		top: 35%;
+		color: white;
+		padding: 10%;
+		span {
+			display: block;
+		}
+		font-size: 12px;
+	}
+	.testimonial-by {
+		font-weight: bold;
+	}
+	p.testimonial-date {
+		display: block;
+		margin-top: 0.5rem;
+		font-weight: bold;
+		font-size: 10px;
+		color: #444;
+		left: 8px;
+		top: 100%;
+	}
+}
+
+
