@@ -6358,15 +6358,21 @@ header, footer {
     font-size: 10em; }
 
 header {
+  z-index: 1030;
+  width: 100%;
+  margin: 0 auto;
   text-transform: uppercase; }
   header .icon-duel {
     width: 40px;
     height: 40px; }
+  header .navbar-links {
+    display: flex;
+    flex-grow: 1; }
 
 footer {
   padding: 0.5rem 1rem;
   width: 100%;
-  height: 50px;
+  height: 100px;
   display: flex; }
   footer .left-items, footer .right-items {
     display: flex;
@@ -6384,8 +6390,17 @@ footer {
     color: #fff;
     text-decoration: none; }
 
+@media (min-width: 576px) {
+  footer {
+    height: 50px; } }
+
 section {
+  padding-top: 2rem;
   padding-bottom: 2rem; }
+
+@media (min-width: 768px) {
+  section {
+    padding-top: 0; } }
 
 article {
   position: relative;

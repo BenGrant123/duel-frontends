@@ -53,7 +53,7 @@
 	.col-md-2-5 {
 		width: 25%;
 		float: left;
-	}				
+	}	
 }
 @media (min-width: 992px) {
 	.col-lg-1-5 {
@@ -97,17 +97,24 @@ header, footer {
 }
 
 header {
+	z-index: 1030;
+	width: 100%;
+	margin: 0 auto;
 	text-transform: uppercase;
 	.icon-duel {
 		width: 40px;
 	    height: 40px;
+	}
+	.navbar-links {
+		display: flex;
+		flex-grow: 1;
 	}
 }
 
 footer {
 	padding: 0.5rem 1rem;
 	width: 100%;
-  	height: 50px;
+  	height: 100px;
 	display: flex;
 	.left-items, .right-items {
 		display: flex;
@@ -130,9 +137,20 @@ footer {
 		text-decoration: none;
 	}
 }
+@media (min-width: 576px) {
+	footer {
+		height: 50px;
+	}
+}
 
 section {
+	padding-top: 2rem;
 	padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+	section {
+		padding-top: 0;
+	}
 }
 
 article {

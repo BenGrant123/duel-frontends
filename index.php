@@ -15,7 +15,7 @@
 	    <svg icon="duel" class="icon icon-duel">
 	    	<use href="#icon-duel">
 	    </svg>
-	    <div class="collapse navbar-collapse" id="navbarCollapse">
+	    <div class="navbar-links" id="navbarCollapse">
 	      <ul class="navbar-nav ml-auto">
 	        <li class="nav-item active">
 	          <a class="nav-link" href="#">My Submissions <span class="sr-only">(current)</span></a>
