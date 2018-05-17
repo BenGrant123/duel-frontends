@@ -1,6 +1,10 @@
 // Import Bootstrap
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/input-group";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/transitions";
 
 @font-face {
     font-family: 'roboto_wf';
@@ -96,18 +100,68 @@ header, footer {
 	}
 }
 
+.navbar {
+	position: fixed!important;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
 header {
-	z-index: 1030;
+	color: #fff;
+	/*
+	
 	width: 100%;
 	margin: 0 auto;
-	text-transform: uppercase;
+	*/
 	.icon-duel {
 		width: 40px;
 	    height: 40px;
 	}
-	.navbar-links {
+	.icon-brand {
+		width: 40px;
+		height: 40px;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		margin-right: 10px;
+	}
+	span {
+		display: block;
+	}
+	span.brand-name {
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	span.brand-url {
+		font-size: 12px;
+	}
+	
+
+	.navbar-dark .navbar-nav .nav-link {
+		color: #fff;
+		text-transform: uppercase;
+	}
+	
+}
+
+.container {
+	.toolbar {
 		display: flex;
-		flex-grow: 1;
+		.rail-select {
+			width: 200px;
+			margin-left: auto;
+			display: flex;
+		}
+		.form-control {
+			border: 1px solid #eaeaea;
+			font-size: 12px;
+			color: #444444;
+
+		}
+		
+	}
+	.row {
+		display: block;
 	}
 }
 
@@ -146,6 +200,7 @@ footer {
 section {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	display: flex;
 }
 @media (min-width: 768px) {
 	section {
@@ -178,7 +233,7 @@ article {
 		border-radius: 4px;
 	}
 	.bg {
-		border-radius: 8px;
+		border-radius: 4px;
 	}
 	h2 {
 		font-size: 14px;
@@ -213,5 +268,3 @@ article {
 		top: 100%;
 	}
 }
-
-
