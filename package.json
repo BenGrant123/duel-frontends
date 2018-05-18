@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "php -S localhost:8080",
-    "svgo": "svgo --disable=removeHiddenElems --disable=cleanupIDs --disable=convertStyleToAttrs --enable=removeTitle --pretty --multipass --precision=2 --indent=2 --folder=./ng/static/icons"
+    "svgo": "svgo --disable=removeHiddenElems --disable=cleanupIDs --disable=convertStyleToAttrs --enable=removeTitle --pretty --multipass --precision=2 --indent=2 --folder=static/icons"
   },
   "repository": {
     "type": "git",

@@ -41,9 +41,21 @@
 	</nav>
 	</header>
 	<main class="container">
-		<section>
-			<h1 class="mb-4">My submissions</h1>
-		</section>
+		<div class="toolbar">
+			<section>
+				<h1 class="mb-4">My submissions</h1>
+			</section>
+			<div class="rail-select">
+			  <div class="select-side">
+			    <i class="glyphicon glyphicon-menu-down blue"></i>
+			  </div>
+			  <select class="form-control" id="sel1">
+			    <option value="1">Sort by newest</option>
+			    <option value="2">Sort by oldest</option>
+			  </select>
+			</div>
+			
+		</div>
 		<div class="row">
 			<?php foreach (range(1, 12) as $product): ?>
 			<div class="col-xs-4-5 col-sm-2-5 col-md-1-5 col-lg-1-5">
@@ -55,6 +67,7 @@
 					<p class="testimonial-date">
 						22/07/2018
 					</p>
+					<img src="static/img/three-dots.svg" alt="" class="three-dots img-fluid">
 				</article>
 			</div>
 			<?php endforeach; ?>
