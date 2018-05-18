@@ -70,35 +70,67 @@
 						<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 						  <div class="carousel-inner">
 						    <div class="carousel-item active">
-						      <img class="d-block" src="static/img/product.jpg" alt="First slide">
+						      <img src="static/img/product.jpg" alt="First slide">
+						      <div class="text">
+								<h3>Stay Matte Liquid Lip Colour | Fatal Kiss</h3>
+								<p class="description">A new liquid lipstick with high-intensity colour,
+		velvety matte finish, and a long-lasting...</p>
+								<p class="price">£5.99</p>
+							 </div>
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block" src="static/img/product2.jpg" alt="Second slide">
+						      <img src="static/img/product2.jpg" alt="Second slide">
+						      <div class="text">
+								<h3>Microphone | Fatal Kiss</h3>
+								<p class="description">A new microphone with high-intensity colour,
+		velvety matte finish, and a long-lasting...</p>
+								<p class="price">£7.99</p>
+							 </div>
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block" src="static/img/product3.jpg" alt="Third slide">
+						      <img src="static/img/product3.jpg" alt="Third slide">
+						      <div class="text">
+								<h3>Golf Club | Fatal Kiss</h3>
+								<p class="description">A new golf clubs with high-intensity colour,
+		velvety matte finish, and a long-lasting...</p>
+								<p class="price">£10.99</p>
+							 </div>
 						    </div>
+						    <div class="carousel-item">
+						      <img  src="static/img/product.jpg" alt="Fourth slide">
+						      <div class="text">
+								<h3>Stay Matte Liquid Lip Colour | Fatal Kiss</h3>
+								<p class="description">A new liquid lipstick with high-intensity colour,
+		velvety matte finish, and a long-lasting...</p>
+								<p class="price">£5.99</p>
+							 </div>
+						    </div>
+						    
 						  </div>
-						  <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+						  <!--<a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
 						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						    <span class="sr-only">Previous</span>
 						  </a>
 						  <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
 						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 						    <span class="sr-only">Next</span>
-						  </a>
+						  </a>-->
 						  <ol class="carousel-indicators">
-						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				    		<li data-target="#carouselExampleIndicators" class="active">
+				    			<a href="#productCarousel" role="button" data-slide-to="0"></a>
+				    		</li>
+				 			<li data-target="#carouselExampleIndicators">
+				 				<a href="#productCarousel" role="button" data-slide-to="1"></a>
+				 			</li>
+				 			<li data-target="#carouselExampleIndicators">
+				 				<a href="#productCarousel" role="button" data-slide-to="2"></a>
+				 			</li>
+				 			<li data-target="#carouselExampleIndicators">
+				 				<a href="#productCarousel" role="button" data-slide-to="3"></a>
+				 			</li>
 						  </ol>
 						</div>
-						<div class="text">
-							<h3>Stay Matte Liquid Lip Colour | Fatal Kiss</h3>
-							<p class="description">A new liquid lipstick with high-intensity colour,
-	velvety matte finish, and a long-lasting...</p>
-							<p class="price">£5.99</p>
-						</div>
+						
 					</div>
 					
 					

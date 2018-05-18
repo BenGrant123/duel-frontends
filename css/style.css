@@ -7303,11 +7303,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: bold;
   font-style: normal; }
 
-@media (min-width: 350px) {
-  footer .left-items, footer .right-items {
-    display: flex;
-    width: auto; } }
-
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
   position: relative;
   min-height: 1px;
@@ -7331,18 +7326,18 @@ a.text-dark:hover, a.text-dark:focus {
   .submission-widget .widget-header, .submission-widget .widget-main {
     padding: 1rem; }
   .submission-widget .widget-product {
-    display: flex;
-    padding: 1.2rem;
+    padding: 0.75rem 1.2rem 1.2rem 1.2rem;
     color: #222; }
     .submission-widget .widget-product img {
+      display: block;
       height: 70px;
       width: 70px;
       border: 1px solid #eaeaea; }
     .submission-widget .widget-product .text {
-      margin-left: 10px; }
+      display: block;
+      margin-top: 10px; }
     .submission-widget .widget-product h3 {
-      font-size: 12px;
-      font-weight: 400; }
+      font-size: 12px; }
     .submission-widget .widget-product .carousel-control-prev, .submission-widget .widget-product .carousel-control-next {
       bottom: 25px; }
     .submission-widget .widget-product .carousel-control-prev-icon, .submission-widget .widget-product .carousel-control-next-icon {
@@ -7351,13 +7346,18 @@ a.text-dark:hover, a.text-dark:focus {
       width: 70px;
       position: static;
       margin: 0.5rem auto; }
-    .submission-widget .widget-product .carousel-indicators li {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background-color: #eaeaea; }
+      .submission-widget .widget-product .carousel-indicators li a {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%; }
       .submission-widget .widget-product .carousel-indicators li.active {
         background-color: #444; }
+    .submission-widget .widget-product .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #eaeaea; }
   .submission-widget .widget-main .form-check {
     font-size: 12px;
     color: #222;
@@ -7393,7 +7393,8 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 0;
     margin-bottom: 3px; }
   .submission-widget .testimonial-by {
-    margin-top: 3px; }
+    padding: 0.2rem 0 1rem 0;
+    border-bottom: 1px solid #eaeaea; }
   .submission-widget .three-dots {
     margin-left: auto;
     display: flex;
@@ -7417,26 +7418,6 @@ a.text-dark:hover, a.text-dark:focus {
   transform: none;
   font-size: 16px;
   text-transform: uppercase; }
-
-@media (min-width: 576px) {
-  .col-sm-2-5 {
-    width: 33.33%;
-    float: left; } }
-
-@media (min-width: 768px) {
-  .col-md-2-5 {
-    width: 25%;
-    float: left; } }
-
-@media (min-width: 992px) {
-  .col-lg-1-5 {
-    width: 20%;
-    float: left; } }
-
-@media (min-width: 1200px) {
-  .col-xl-1-5 {
-    width: 20%;
-    float: left; } }
 
 html {
   position: relative;
@@ -7530,31 +7511,10 @@ footer {
   footer .footer-link:first-child {
     margin-right: 15px; }
 
-@media (min-width: 350px) {
-  footer .left-items, footer .right-items {
-    display: flex;
-    width: auto; }
-  footer .icon-duel-small {
-    display: flex;
-    margin-right: 1rem; } }
-
-@media (min-width: 1350px) {
-  .container {
-    width: 90%;
-    max-width: none; } }
-
-@media (min-width: 576px) {
-  footer {
-    height: 50px; } }
-
 section {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex; }
-
-@media (min-width: 768px) {
-  section {
-    padding-top: 0; } }
 
 article {
   position: relative;
@@ -7634,3 +7594,48 @@ p.share {
   display: flex;
   width: 100px;
   padding: 5px 10px; }
+
+@media (min-width: 350px) {
+  footer .left-items, footer .right-items {
+    display: flex;
+    width: auto; }
+  footer .icon-duel-small {
+    display: flex;
+    margin-right: 1rem; } }
+
+@media (min-width: 420px) {
+  .submission-widget .widget-product img {
+    float: left; }
+  .submission-widget .widget-product .text {
+    margin-top: 0;
+    float: right;
+    width: 250px; } }
+
+@media (min-width: 576px) {
+  .col-sm-2-5 {
+    width: 33.33%;
+    float: left; }
+  footer {
+    height: 50px; } }
+
+@media (min-width: 768px) {
+  .col-md-2-5 {
+    width: 25%;
+    float: left; }
+  section {
+    padding-top: 0; } }
+
+@media (min-width: 992px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left; } }
+
+@media (min-width: 1200px) {
+  .col-xl-1-5 {
+    width: 20%;
+    float: left; } }
+
+@media (min-width: 1350px) {
+  .container {
+    width: 90%;
+    max-width: none; } }
