@@ -41,16 +41,6 @@
 			<section>
 				<h1 class="mb-4">My submissions</h1>
 			</section>
-			<div class="rail-select">
-			  <div class="select-side">
-			    <i class="glyphicon glyphicon-menu-down blue"></i>
-			  </div>
-			  <select class="form-control" id="sel1">
-			    <option value="1">Sort by newest</option>
-			    <option value="2">Sort by oldest</option>
-			  </select>
-			</div>
-			
 		</div>
 		<div class="row">
 			
@@ -59,18 +49,57 @@
 					<img src="static/img/client-logo.jpg" alt="" class="logo img-fluid">
 					<img src="static/img/client-image.png" alt="" class="bg img-fluid">
 					
-					<!--<svg icon="three-dots">
-				    	<use href="#icon-three-dots">
-				    </svg>-->
 					<h2>Cineworld</h2>
 					<div class="toolbar">
 						<p class="share">share</p>
 						<img src="static/img/three-dots.svg" alt="" class="three-dots img-fluid">
 					</div>
-					<p class="testimonial-date">
-						22/07/2018
+					<p class="testimonial">
+						<span class="testimonial-date">
+							22/07/2018
+						</span>
+						Testimonial goes here! Testimonial goes here! Testimonial goes here
+						<span class="testimonial-more">
+							read more
+						</span>
+						<span class="testimonial-by">
+							Maria F
+						</span>
 					</p>
-					<p class="testimonial">Testimonial goes here! Testimonial goes here! Testimonial goes here <span class="testimonial-more">read more</span><span class="testimonial-by">Maria F</span></p>
+					<div class="widget-product">
+						<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="d-block" src="static/img/product.jpg" alt="First slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block" src="static/img/product2.jpg" alt="Second slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block" src="static/img/product3.jpg" alt="Third slide">
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						</div>
+						<div class="text">
+							<h3>Stay Matte Liquid Lip Colour | Fatal Kiss</h3>
+							<p class="description">A new liquid lipstick with high-intensity colour,
+	velvety matte finish, and a long-lasting...</p>
+							<p class="price">£5.99</p>
+						</div>
+					</div>
 					
 					
 				</div>
@@ -80,8 +109,20 @@
 					<div class="widget-header">
 						<h2>Earn More</h2>
 					</div>
-					<p class="testimonial">Testimonial goes here! Testimonial goes here! Testimonial goes here ... <span class="testimonial-by">Maria F</span></p>
-					
+					<div class="widget-main">
+						<h3>To Do</h3>
+						<form>
+						  <div class="form-check">
+						    <input type="checkbox" class="form-check-input" id="widget2Check2">
+						    <label class="form-check-label" for="exampleCheck1">Share your testimonial and <strong>get 100 loyalty points</strong></label>
+						  </div>
+						  <div class="form-check">
+						    <input type="checkbox" class="form-check-input" id="widget2Check3">
+						    <label class="form-check-label" for="exampleCheck1">Refer your friends and <strong>get £20</strong></label>
+						  </div>
+						</form>
+					</div>
+										
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4 submission-widget">
@@ -89,8 +130,22 @@
 					<div class="widget-header">
 						<h2>My Rewards</h2>
 					</div>
-					<p class="testimonial">Testimonial goes here! Testimonial goes here! Testimonial goes here ... <span class="testimonial-by">Maria F</span></p>
-					
+					<div class="widget-main">
+						<div class="reward">
+							<h3>Discount Code</h3>
+							<p class="reward-amount">GET30</p>
+							<p>30% off your next purchase</p>
+						</div>
+						<div class="reward">
+							<h3>Loyalty Points</h3>
+							<p class="reward-amount">200</p>
+						</div>
+						<div class="reward">
+							<h3>Another Reward</h3>
+							<p class="reward-amount">Reward Amount</p>
+							<p>Some information about the reward</p>
+						</div>
+					</div>
 				<div>
 			</div>
 			

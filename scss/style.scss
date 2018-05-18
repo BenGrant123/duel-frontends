@@ -5,6 +5,8 @@
 @import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/navbar";
 @import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/utilities/flex";
 
 @font-face {
     font-family: 'roboto_wf';
@@ -52,29 +54,107 @@
 }
 
 .submission-widget {
-	display: flex;
 	float: left;
-	// display: inline-block;
 	vertical-align: top;
 	position: relative;
 	padding-left: 10px;
 	padding-right: 10px;
-	// border: 1px solid #eaeaea;
+	font-size: 12px;
 	.inner {
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
 
 	}
-	.widget-header {
-		padding: 1rem 1rem 0 1rem;
+	.widget-header, .widget-main {
+		padding: 1rem;
+	}
+	.widget-product {
+		display: flex;
+		padding: 1.2rem;
+		img {
+			height: 70px;
+			width: 70px;
+			border: 1px solid #eaeaea;
+		}
+		.text {
+			margin-left: 10px;
+		}
+		color: #222;
+		h3 {
+			font-size: 12px;
+			font-weight: 400;
+		}
+		.carousel-control-prev, .carousel-control-next {
+			bottom: 25px;
+		}
+		.carousel-control-prev-icon, .carousel-control-next-icon {
+			background-color: black;
+		}
+		.carousel-indicators {
+			width: 70px;
+			position: static;
+			margin: 0.5rem auto;
+		}
+		.carousel-indicators li {
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: #eaeaea;
+			&.active {
+				background-color: #444;
+			}
+		}
+		
+	}
+	.widget-main {
+		.form-check {
+			font-size: 12px;
+			color: #222;
+			padding-bottom: 0.6rem;
+		}
+		.reward {
+			font-size: 12px;
+			color: #444;
+		}
+		.reward:first-child {
+			padding-top: 0px;
+		}
+		.reward:last-child {
+			padding-bottom: 0px;
+			border-bottom: none;
+		}
 	}
 	h2 {
 		color: #222;
 		font-weight: normal;
+		margin-bottom: 0;
+	}
+	.reward {
+		padding: 0.75rem 0;
+		border-bottom: 1px solid #eaeaea;
+	}
+	p.reward-amount {
+		font-weight: bold;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 10px;
+		color: #444;
+	}
+	p {
+		margin-bottom: 0;
 	}
 	.testimonial {
 		color: #444;
-		padding: 5px 20px 0px 20px;
+		padding: 0.25rem 1.2rem;
+	}
+	.testimonial-date {
+		position: static;
+		margin-top: 0;
+		margin-bottom: 3px;
+	}
+	.testimonial-by {
+		margin-top: 3px;
 	}
 	.three-dots {
 		margin-left: auto;
@@ -84,7 +164,7 @@
 	.toolbar {
 		display: flex;
 		align-items: center;
-		padding: 10px 20px;
+		padding: 0.7rem 1.2rem;
 	}
 
 	
@@ -176,11 +256,6 @@ header, footer {
 
 header {
 	color: #fff;
-	/*
-	
-	width: 100%;
-	margin: 0 auto;
-	*/
 	.icon-duel {
 		width: 40px;
 	    height: 40px;
@@ -375,6 +450,7 @@ h2 {
 	color: #444;
 	left: 8px;
 	top: 100%;
+	font-weight: bold;
 }
 .testimonial-more {
 	font-weight: bold;
