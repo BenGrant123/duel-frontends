@@ -32,7 +32,20 @@
     font-style: normal;
 }
 
-
+a {
+	.testimonial-readmore:hover {
+		text-decoration: none;
+		color: #01b8d7;
+	}
+	.testimonial-readless:hover {
+		text-decoration: none;
+		color: #01b8d7;
+	}
+}
+a:hover {
+	text-decoration: none;
+	color: #01b8d7;
+}
 
 
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
@@ -47,6 +60,7 @@
 }
 
 .submission-widget {
+
 	float: left;
 	vertical-align: top;
 	position: relative;
@@ -56,13 +70,14 @@
 	.inner {
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
-
+		position: relative;
 	}
 	.widget-header, .widget-main {
 		padding: 1rem;
 	}
 	.widget-product {
 		padding: 0.75rem 1.2rem 1.2rem 1.2rem;
+		
 		img {
 			display: block;
 			height: 70px;
@@ -393,13 +408,11 @@ h2 {
 	top: 35%;
 	color: white;
 	padding: 10%;
-	span {
-		display: block;
-	}
 	font-size: 12px;
 }
 .testimonial-by {
 	font-weight: bold;
+	display: block;
 }
 .testimonial-date {
 	position: absolute;
@@ -412,10 +425,18 @@ h2 {
 	top: 100%;
 	font-weight: bold;
 }
-.testimonial-more {
+.testimonial-readmore {
 	font-weight: bold;
 	font-size: 10px;
 	color: #01b8d7;
+}
+.testimonial-readless {
+	font-weight: bold;
+	font-size: 10px;
+	color: #01b8d7;
+}
+.testimonial-more {
+	
 }
 p.share {
 	margin: 0;

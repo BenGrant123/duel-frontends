@@ -7303,6 +7303,18 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: bold;
   font-style: normal; }
 
+a .testimonial-readmore:hover {
+  text-decoration: none;
+  color: #01b8d7; }
+
+a .testimonial-readless:hover {
+  text-decoration: none;
+  color: #01b8d7; }
+
+a:hover {
+  text-decoration: none;
+  color: #01b8d7; }
+
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
   position: relative;
   min-height: 1px;
@@ -7322,7 +7334,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 12px; }
   .submission-widget .inner {
     border: 1px solid #eaeaea;
-    border-radius: 4px; }
+    border-radius: 4px;
+    position: relative; }
   .submission-widget .widget-header, .submission-widget .widget-main {
     padding: 1rem; }
   .submission-widget .widget-product {
@@ -7563,11 +7576,10 @@ h2 {
   color: white;
   padding: 10%;
   font-size: 12px; }
-  .testimonial span {
-    display: block; }
 
 .testimonial-by {
-  font-weight: bold; }
+  font-weight: bold;
+  display: block; }
 
 .testimonial-date {
   position: absolute;
@@ -7580,7 +7592,12 @@ h2 {
   top: 100%;
   font-weight: bold; }
 
-.testimonial-more {
+.testimonial-readmore {
+  font-weight: bold;
+  font-size: 10px;
+  color: #01b8d7; }
+
+.testimonial-readless {
   font-weight: bold;
   font-size: 10px;
   color: #01b8d7; }

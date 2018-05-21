@@ -16,10 +16,10 @@
 	  <svg icon="duel" class="icon icon-duel">
 	    	<use href="#icon-duel">
 	  </svg>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	  <div class="collapse navbar-collapse" id="navbarToggler">
 	    
 	    
 	    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -54,18 +54,21 @@
 						<p class="share">share</p>
 						<img src="static/img/three-dots.svg" alt="" class="three-dots img-fluid">
 					</div>
-					<p class="testimonial">
+					<div class="testimonial">
 						<span class="testimonial-date">
 							22/07/2018
 						</span>
-						Testimonial goes here! Testimonial goes here! Testimonial goes here
-						<span class="testimonial-more">
-							read more
-						</span>
+						<p class="testimonial-text">
+							Testimonial goes here! Testimonial goes here! Testimonial goes here
+							<span class="testimonial-more collapse">Some more text in the testimonial</span>
+						</p>
+						
+						<a data-toggle="collapse" data-target=".testimonial-more,.testimonial-readmore,.testimonial-readless" class="collapse show testimonial-readmore" href="#" role="button" aria-label="Toggle expanded testimonial">read more</a>
+						<a data-toggle="collapse" data-target=".testimonial-more,.testimonial-readmore,.testimonial-readless" class="collapse testimonial-readless" href="#" role="button" aria-label="Toggle expanded testimonial">read less</a>
 						<span class="testimonial-by">
 							Maria F
 						</span>
-					</p>
+					</div>
 					<div class="widget-product">
 						<div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 						  <div class="carousel-inner">
@@ -107,14 +110,6 @@
 						    </div>
 						    
 						  </div>
-						  <!--<a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
-						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    <span class="sr-only">Previous</span>
-						  </a>
-						  <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
-						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    <span class="sr-only">Next</span>
-						  </a>-->
 						  <ol class="carousel-indicators">
 				    		<li data-target="#carouselExampleIndicators" class="active">
 				    			<a href="#productCarousel" role="button" data-slide-to="0"></a>
