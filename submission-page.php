@@ -28,24 +28,23 @@
 					<h2>Cineworld</h2>
 					<div class="toolbar">
 						<p class="share">share</p>
-						<img data-toggle="collapse" data-target="#modalsMenuToggler" src="static/img/three-dots.svg" alt="" class="three-dots img-fluid">
+						<svg data-toggle="collapse" data-target="#modalsMenuToggler" icon="duel" class="icon icon-three-dots collapse">
+					    	<use href="#icon-three-dots">
+					    </svg>
+						<!--<img data-toggle="collapse" data-target="#modalsMenuToggler" src="static/img/three-dots.svg" alt="" class="three-dots img-fluid collapse">-->
 						<div class="collapse modals-menu-collapse" id="modalsMenuToggler">
 						    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-						      <li class="nav-item active">
+						      <li data-toggle="collapse" data-target=".modals-menu-collapse" class="nav-item active">
 						        <a data-toggle="modal" data-target="#modal1" class="nav-link" href="#">Edit<span class="sr-only">(current)</span></a>
 						      </li>
-						      <li class="nav-item">
-						        <a data-toggle="modal" data-target="#modal2" class="nav-link" href="#">Privacy</a>
+						      <li data-toggle="collapse" data-target=".modals-menu-collapse" class="nav-item">
+						        <a data-toggle="modal" data-target="#modal2" class="nav-link" href="#">Permissions</a>
 						      </li>
-						      <li class="nav-item">
-						        <a data-toggle="modal" data-target="#modal3" class="nav-link" href="#">Terms</a>
+						      <li data-toggle="collapse" data-target=".modals-menu-collapse" class="nav-item">
+						        <a data-toggle="modal" data-target="#modal3" class="nav-link" href="#">Delete</a>
 						      </li>
 						    </ul>
 						  </div>
-						<!-- Button trigger modal -->
-						<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-						  Launch demo modal
-						</button>-->
 					</div>
 					<div class="testimonial">
 						<span class="testimonial-date">
