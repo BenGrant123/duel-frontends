@@ -10,36 +10,7 @@
 
 <?= file_get_contents(__DIR__ . '/static/icons/app-icons.svg') ?>
 
-<header>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      
-	  <svg icon="duel" class="icon icon-duel">
-	    	<use href="#icon-duel">
-	    </svg>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-	    
-	    
-	    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">My Submissions<span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">My Rewards</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">My Profile</a>
-	      </li>
-	    </ul>
-	    <!--<form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>-->
-	  </div>
-	</nav>
-	</header>
+	<?php include 'includes/header.php';?>
 	<main class="container">
 		<div class="toolbar">
 			<section>
@@ -73,25 +44,7 @@
 			<?php endforeach; ?>
 		</div>
 	</main>
-	<footer class="footer bg-dark">
-	  <div class="left-items">
-	  	<svg icon="duel" class="icon icon-duel-small">
-	    	<use href="#icon-duel">
-	    </svg>
-	    <span class="copyright">Copyright © 2018. All rights reserved by Duel.</span>
-	  </div>
-	  <div class="right-items">
-	    <a class="footer-link" href="#">Privacy Policy</a>
-	    <a class="footer-link" href="#">Terms & Conditions</a>
-	  </div>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-	</footer>
+	<?php include 'includes/footer.php';?>
 
 </body>
 </html>

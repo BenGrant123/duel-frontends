@@ -31,22 +31,49 @@
     font-weight: bold;
     font-style: normal;
 }
-
-a {
-	.testimonial-readmore:hover {
-		text-decoration: none;
-		color: #01b8d7;
+.modal-header {
+	
+	h5 {
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #222;
+		font-weight: normal;
 	}
-	.testimonial-readless:hover {
-		text-decoration: none;
-		color: #01b8d7;
+	border-bottom: 2px solid #01b8d7;
+}
+.modal-body {
+	font-size: 12px;
+	color: #222;
+	h3 {
+		font-size: 12px;
+	}
+	.form-control {
+		font-size: 12px;
 	}
 }
-a:hover {
-	text-decoration: none;
-	color: #01b8d7;
-}
+.modal-footer {
+	border-top: none;
+	padding-top: 0rem;
+	button {
+		color: #fff;
+		background-color: #05b8c1;
+		font-size: 12px;
+		border-color: #eaeaea;
+		&.btn {
+			&.btn-secondary {
+				background-color: #fff;
+				color: #222;
+				border-color: #eaeaea;
+			}
+			&.btn-primary:hover {
+				color: #fff;
+				background-color: #05aaaa;
+				border-color: #eaeaea;
+			}
 
+		}
+	}
+}
 
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
   position: relative;
@@ -67,6 +94,11 @@ a:hover {
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 12px;
+	a:hover {
+		text-decoration: none;
+		color: #05b8c1;
+	}
+
 	.inner {
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
@@ -186,9 +218,32 @@ a:hover {
 		width: 20px;
 	}
 	.toolbar {
+		position: relative;
 		display: flex;
 		align-items: center;
 		padding: 0.7rem 1.2rem;
+	}
+	.modals-menu-collapse {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: #222;
+		color: #fff;
+		width: 100px;
+		li {
+			a {
+				padding: 0rem 1rem 0.5rem 1rem;
+			}
+			a, a:hover {
+				color: #fff;
+			}
+		}
+		li:first-child {
+			a {
+				padding-top: 0.5rem;
+			}
+		}
+		
 	}
 
 	
@@ -380,7 +435,7 @@ article {
 		top: 100%;
 		margin-top: 6px;
 		right: 8px;
-		color: #01b8d7;
+		color: #05b8c1;
 	}
 }
 
@@ -428,19 +483,19 @@ h2 {
 .testimonial-readmore {
 	font-weight: bold;
 	font-size: 10px;
-	color: #01b8d7;
+	color: #05b8c1;
 }
 .testimonial-readless {
 	font-weight: bold;
 	font-size: 10px;
-	color: #01b8d7;
+	color: #05b8c1;
 }
 .testimonial-more {
 	
 }
 p.share {
 	margin: 0;
-	border: 1px solid #01b8d7;
+	border: 1px solid #05b8c1;
 	border-radius: 4px;
 	font-size: 12px;
 	color: #222;

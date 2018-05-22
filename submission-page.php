@@ -10,32 +10,8 @@
 
 <?= file_get_contents(__DIR__ . '/static/icons/app-icons.svg') ?>
 
-<header>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      
-	  <svg icon="duel" class="icon icon-duel">
-	    	<use href="#icon-duel">
-	  </svg>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarToggler">
-	    
-	    
-	    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">My Submissions<span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">My Rewards</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">My Profile</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
-	</header>
+<?php include 'includes/brand-header.php';?>
+	
 	<main class="container">
 		<div class="toolbar">
 			<section>
@@ -52,7 +28,24 @@
 					<h2>Cineworld</h2>
 					<div class="toolbar">
 						<p class="share">share</p>
-						<img src="static/img/three-dots.svg" alt="" class="three-dots img-fluid">
+						<img data-toggle="collapse" data-target="#modalsMenuToggler" src="static/img/three-dots.svg" alt="" class="three-dots img-fluid">
+						<div class="collapse modals-menu-collapse" id="modalsMenuToggler">
+						    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						      <li class="nav-item active">
+						        <a data-toggle="modal" data-target="#modal1" class="nav-link" href="#">Edit<span class="sr-only">(current)</span></a>
+						      </li>
+						      <li class="nav-item">
+						        <a data-toggle="modal" data-target="#modal2" class="nav-link" href="#">Privacy</a>
+						      </li>
+						      <li class="nav-item">
+						        <a data-toggle="modal" data-target="#modal3" class="nav-link" href="#">Terms</a>
+						      </li>
+						    </ul>
+						  </div>
+						<!-- Button trigger modal -->
+						<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+						  Launch demo modal
+						</button>-->
 					</div>
 					<div class="testimonial">
 						<span class="testimonial-date">
@@ -178,25 +171,8 @@
 			
 		</div>
 	</main>
-	<footer class="footer bg-dark">
-	  <div class="left-items">
-	  	<svg icon="duel" class="icon icon-duel-small">
-	    	<use href="#icon-duel">
-	    </svg>
-	    <span class="copyright">Copyright © 2018. All rights reserved by Duel.</span>
-	  </div>
-	  <div class="right-items">
-	    <a class="footer-link" href="#">Privacy Policy</a>
-	    <a class="footer-link" href="#">Terms & Conditions</a>
-	  </div>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
-	</footer>
+	<?php include 'includes/modals.php';?>
+	<?php include 'includes/footer.php';?>
 
 </body>
 </html>
