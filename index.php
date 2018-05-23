@@ -38,7 +38,6 @@
 					<p class="testimonial-date">
 						22/07/2018
 					</p>
-					<!--<img src="static/img/three-dots.svg" alt="" class="three-dots img-fluid">-->
 					<svg icon="duel" class="icon icon-three-dots">
 				    	<use href="#icon-three-dots">
 				    </svg>

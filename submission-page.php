@@ -31,7 +31,6 @@
 						<svg data-toggle="collapse" data-target="#modalsMenuToggler" icon="duel" class="icon icon-three-dots collapse">
 					    	<use href="#icon-three-dots">
 					    </svg>
-						<!--<img data-toggle="collapse" data-target="#modalsMenuToggler" src="static/img/three-dots.svg" alt="" class="three-dots img-fluid collapse">-->
 						<div class="collapse modals-menu-collapse" id="modalsMenuToggler">
 						    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 						      <li data-toggle="collapse" data-target=".modals-menu-collapse" class="nav-item active">
@@ -103,16 +102,16 @@
 						    
 						  </div>
 						  <ol class="carousel-indicators">
-				    		<li data-target="#carouselExampleIndicators" class="active">
+				    		<li class="active">
 				    			<a href="#productCarousel" role="button" data-slide-to="0"></a>
 				    		</li>
-				 			<li data-target="#carouselExampleIndicators">
+				 			<li>
 				 				<a href="#productCarousel" role="button" data-slide-to="1"></a>
 				 			</li>
-				 			<li data-target="#carouselExampleIndicators">
+				 			<li>
 				 				<a href="#productCarousel" role="button" data-slide-to="2"></a>
 				 			</li>
-				 			<li data-target="#carouselExampleIndicators">
+				 			<li>
 				 				<a href="#productCarousel" role="button" data-slide-to="3"></a>
 				 			</li>
 						  </ol>
@@ -132,12 +131,12 @@
 						<h3>To Do</h3>
 						<form>
 						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="widget2Check2">
-						    <label class="form-check-label" for="exampleCheck1">Share your testimonial and <strong>get 100 loyalty points</strong></label>
+						    <input type="checkbox" class="form-check-input" id="widget2Check1">
+						    <label class="form-check-label" for="widget2Check1">Share your testimonial and <strong>get 100 loyalty points</strong></label>
 						  </div>
 						  <div class="form-check">
-						    <input type="checkbox" class="form-check-input" id="widget2Check3">
-						    <label class="form-check-label" for="exampleCheck1">Refer your friends and <strong>get £20</strong></label>
+						    <input type="checkbox" class="form-check-input" id="widget2Check2">
+						    <label class="form-check-label" for="widget2Check1">Refer your friends and <strong>get £20</strong></label>
 						  </div>
 						</form>
 					</div>

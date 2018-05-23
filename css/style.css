@@ -7331,30 +7331,23 @@ a.text-dark:hover, a.text-dark:focus {
   .modal-footer button {
     font-size: 12px;
     border-color: #eaeaea; }
-    .modal-footer button.btn {
-      /*
-			.btn-secondary:focus, .btn-secondary.focus, .btn-primary:focus, .btn-primary.focus, .btn-delete:focus, .btn-delete.focus {
-				box-shadow: none;
-				outline: none;
-			}
-			*/ }
-      .modal-footer button.btn.btn-secondary {
-        background-color: #fff;
-        color: #222;
-        border-color: #eaeaea; }
-      .modal-footer button.btn.btn-primary {
-        color: #fff;
-        background-color: #05b8c1; }
-      .modal-footer button.btn.btn-primary:hover {
-        color: #fff;
-        background-color: #05aaaa;
-        border-color: #eaeaea; }
-      .modal-footer button.btn.btn-delete {
-        color: #fff;
-        background-color: #e8634b; }
-      .modal-footer button.btn.btn-delete:hover {
-        color: #fff;
-        background-color: #d15646; }
+    .modal-footer button.btn.btn-secondary {
+      background-color: #fff;
+      color: #222;
+      border-color: #eaeaea; }
+    .modal-footer button.btn.btn-primary {
+      color: #fff;
+      background-color: #05b8c1; }
+    .modal-footer button.btn.btn-primary:hover {
+      color: #fff;
+      background-color: #05aaaa;
+      border-color: #eaeaea; }
+    .modal-footer button.btn.btn-delete {
+      color: #fff;
+      background-color: #e8634b; }
+    .modal-footer button.btn.btn-delete:hover {
+      color: #fff;
+      background-color: #d15646; }
 
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
   position: relative;
@@ -7365,6 +7358,9 @@ a.text-dark:hover, a.text-dark:focus {
 .col-xs-4-5 {
   width: 100%;
   float: left; }
+
+.col-xs-12 {
+  margin-bottom: 1rem; }
 
 .submission-widget {
   float: left;
@@ -7452,7 +7448,7 @@ a.text-dark:hover, a.text-dark:focus {
   .submission-widget .testimonial-by {
     padding: 0.2rem 0 1rem 0;
     border-bottom: 1px solid #eaeaea; }
-  .submission-widget .three-dots, .submission-widget .icon-three-dots {
+  .submission-widget .icon-three-dots {
     cursor: pointer;
     margin-left: auto;
     display: flex;
@@ -7606,7 +7602,7 @@ article {
   article p {
     position: absolute;
     z-index: 1000; }
-  article .three-dots, article .icon-three-dots {
+  article .icon-three-dots {
     position: absolute;
     top: 100%;
     margin-top: 6px;
@@ -7693,9 +7689,13 @@ p.share {
     width: 250px; } }
 
 @media (min-width: 576px) {
+  .col-xs-12 {
+    margin-bottom: 0rem; }
   .col-sm-2-5 {
     width: 33.33%;
     float: left; }
+  .col-sm-6:last-child {
+    margin-top: 1rem; }
   footer {
     height: 50px; } }
 
@@ -7703,6 +7703,8 @@ p.share {
   .col-md-2-5 {
     width: 25%;
     float: left; }
+  .col-sm-6, .sm-6:last-child {
+    margin-top: 0; }
   section {
     padding-top: 0; } }
 
