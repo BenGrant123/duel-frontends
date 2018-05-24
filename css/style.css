@@ -7703,7 +7703,7 @@ p.share {
   .col-md-2-5 {
     width: 25%;
     float: left; }
-  .col-sm-6, .sm-6:last-child {
+  .col-sm-6, .col-sm-6:last-child {
     margin-top: 0; }
   section {
     padding-top: 0; } }
