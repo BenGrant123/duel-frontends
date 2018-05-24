@@ -29,7 +29,7 @@
 					<div class="toolbar">
 						<p class="share">share</p>
 						<svg data-toggle="collapse" data-target="#modalsMenuToggler" icon="duel" class="icon icon-three-dots collapse">
-					    	<use href="#icon-three-dots">
+					    	<use href="#icon-three-dots"></use>
 					    </svg>
 						<div class="collapse modals-menu-collapse" id="modalsMenuToggler">
 						    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">

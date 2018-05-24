@@ -32,15 +32,19 @@
 			<div class="col-xs-4-5 col-sm-2-5 col-md-1-5 col-lg-1-5">
 				<article>
 					<img src="static/img/client-logo.jpg" alt="" class="logo img-fluid">
-					<img src="static/img/client-image.png" alt="" class="bg img-fluid">
+					<a href="submission-page.php">
+						<img src="static/img/client-image.png" alt="" class="bg img-fluid">
+					</a>
 					<h2>Cineworld</h2>
 					<p class="testimonial">Testimonial goes here! Testimonial goes here! Testimonial goes here ... <span class="testimonial-by">Maria F</span></p>
 					<p class="testimonial-date">
 						22/07/2018
 					</p>
-					<svg icon="duel" class="icon icon-three-dots">
-				    	<use href="#icon-three-dots">
-				    </svg>
+					<a href="submission-page.php">
+						<svg icon="duel" class="icon icon-three-dots">
+					    	<use href="#icon-three-dots"></use>
+					    </svg>
+				    </a>
 				</article>
 			</div>
 			<?php endforeach; ?>

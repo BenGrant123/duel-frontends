@@ -238,9 +238,9 @@
 		display: flex;
 		width: 20px;
 		height: 20px;
-		color: #05b8c1;
 		fill: #05b8c1;
 	}
+
 	.toolbar {
 		position: relative;
 		display: flex;
@@ -459,9 +459,12 @@ article {
 		top: 100%;
 		margin-top: 6px;
 		right: 8px;
-		fill: #05b8c1;
 		width: 20px;
 		height: 20px;
+		fill: #05b8c1;
+		a {
+			fill: #05b8c1;
+		}
 	}
 }
 

@@ -7454,7 +7454,6 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     width: 20px;
     height: 20px;
-    color: #05b8c1;
     fill: #05b8c1; }
   .submission-widget .toolbar {
     position: relative;
@@ -7607,9 +7606,11 @@ article {
     top: 100%;
     margin-top: 6px;
     right: 8px;
-    fill: #05b8c1;
     width: 20px;
-    height: 20px; }
+    height: 20px;
+    fill: #05b8c1; }
+    article .icon-three-dots a {
+      fill: #05b8c1; }
 
 .logo {
   z-index: 1000;
