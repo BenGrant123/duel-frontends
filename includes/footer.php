@@ -1,7 +1,7 @@
 <footer class="footer bg-dark">
   <div class="left-items">
-  	<svg icon="duel" class="icon icon-duel-small">
-    	<use href="#icon-duel"></use>
+  	<svg width="26" height="26" icon="duel" class="icon icon-duel-small">
+    	<use xlink:href="#icon-duel"></use>
     </svg>
     <span class="copyright">Copyright © 2018. All rights reserved by Duel.</span>
   </div>

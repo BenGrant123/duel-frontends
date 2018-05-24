@@ -28,8 +28,8 @@
 					<h2>Cineworld</h2>
 					<div class="toolbar">
 						<p class="share">share</p>
-						<svg data-toggle="collapse" data-target="#modalsMenuToggler" icon="duel" class="icon icon-three-dots collapse">
-					    	<use href="#icon-three-dots"></use>
+						<svg width="20" height="20" data-toggle="collapse" data-target="#modalsMenuToggler" class="icon icon-three-dots collapse">
+					    	<use xlink:href="#icon-three-dots"></use>
 					    </svg>
 						<div class="collapse modals-menu-collapse" id="modalsMenuToggler">
 						    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">

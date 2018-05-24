@@ -34,15 +34,15 @@
 					<img src="static/img/client-logo.jpg" alt="" class="logo img-fluid">
 					<a href="submission-page.php">
 						<img src="static/img/client-image.png" alt="" class="bg img-fluid">
+						<p class="testimonial">Testimonial goes here! Testimonial goes here! Testimonial goes here ... <span class="testimonial-by">Maria F</span></p>
 					</a>
 					<h2>Cineworld</h2>
-					<p class="testimonial">Testimonial goes here! Testimonial goes here! Testimonial goes here ... <span class="testimonial-by">Maria F</span></p>
 					<p class="testimonial-date">
 						22/07/2018
 					</p>
 					<a href="submission-page.php">
-						<svg icon="duel" class="icon icon-three-dots">
-					    	<use href="#icon-three-dots"></use>
+						<svg width="20" height="20" class="icon icon-three-dots">
+					    	<use xlink:href="#icon-three-dots"></use>
 					    </svg>
 				    </a>
 				</article>

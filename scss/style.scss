@@ -53,10 +53,21 @@
 	.form-control {
 		font-size: 12px;
 	}
+	form {
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.form-check {
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		width: 100%;
 		font-size: 12px;
 	    color: #222;
 	    padding-bottom: 0.6rem;
+	}
+	.form-check-input {
+		margin-top: auto;
 	}
 }
 .modal-footer {
@@ -182,10 +193,21 @@
 		
 	}
 	.widget-main {
+		form {
+			display: flex;
+			flex-wrap: wrap;
+		}
 		.form-check {
+			display: flex;
+			flex-shrink: 0;
+			align-items: center;
+			width: 100%;
 			font-size: 12px;
 			color: #222;
 			padding-bottom: 0.6rem;
+		}
+		.form-check-input {
+			margin-top: auto;
 		}
 		.reward {
 			font-size: 12px;
@@ -432,15 +454,20 @@ section {
 article {
 	position: relative;
 	margin-bottom: 6rem;
-	cursor: pointer;
-	&:hover {
-		.bg {
-			filter: grayscale(100%);
-		}
-		p {
-			display: block;
+	a {
+		display: block;
+		cursor: pointer;
+		&:hover {
+			.bg {
+				filter: grayscale(100%);
+			}
+			p {
+				display: block;
+			}
 		}
 	}
+	
+	
 	p {
 		display: none;
 	}

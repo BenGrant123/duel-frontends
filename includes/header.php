@@ -1,8 +1,8 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   
-	  <svg icon="duel" class="icon icon-duel">
-	    	<use href="#icon-duel"></use>
+	  <svg width="40" height="40" icon="duel" class="icon icon-duel">
+	    	<use xlink:href="#icon-duel"></use>
 	    </svg>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
