@@ -60,7 +60,7 @@
 	    </div>
 	  </div>
 	</div>
-	<!-- Modal 2 -->
+	<!-- Modal 3 -->
 	<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
