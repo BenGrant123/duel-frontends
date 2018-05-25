@@ -29,15 +29,27 @@
 					<div class="toolbar">
 						<p class="share">share</p>
 						<div class="dropdown">
-						  <svg class="icon icon-three-dots" width="20" height="20" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <use xlink:href="#icon-three-dots"></use>
-						  </svg>
+						  <button id="dropdownMenuButton" data-toggle="dropdown">
+							  <svg class="icon icon-three-dots" width="20" height="20" aria-haspopup="true" aria-expanded="false">
+							    	<use xlink:href="#icon-three-dots"></use>
+							  </svg>
+						  </button>
 						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						    <a data-toggle="modal" data-target="#modal1" class="dropdown-item" href="#modal1">Edit</a>
 						    <a data-toggle="modal" data-target="#modal2" class="dropdown-item" href="#modal2">Permissions</a>
 						    <a data-toggle="modal" data-target="#modal3" class="dropdown-item" href="#modal3">Delete</a>
 						  </div>
 						</div>
+						<!--<div class="dropdown">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Dropdown button
+						  </button>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="#">Action</a>
+						    <a class="dropdown-item" href="#">Another action</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
+						  </div>
+						</div>-->
 					</div>
 					<div class="testimonial">
 						<span class="testimonial-date">

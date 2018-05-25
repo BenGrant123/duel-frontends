@@ -144,13 +144,15 @@
 		.dropdown-menu {
 			border: 1px solid #eaeaea;
 			border-radius: 4px;
-			&.show {
-				transform: translate3d(-129px, 28px, 0px)!important;
-			}
 		}
 		a:hover {
 			color: #05b8c1;
 		}
+	}
+	button {
+		background-color: #fff;
+		border: none;
+		padding: 0px 3px;
 	}
 	.widget-header, .widget-main {
 		padding: 1rem;
@@ -604,6 +606,17 @@ p.share {
 		}
 	}
 }
+@media (max-width: 576px) {
+	.submission-widget {
+		.dropdown {
+			.dropdown-menu {
+				&.show {
+					transform: translate3d(-129px, 28px, 0px)!important;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 576px) {
 	.col-xs-12 {
 		margin-bottom: 0rem;
@@ -614,15 +627,6 @@ p.share {
 	}
 	.col-sm-6:last-child {
 		margin-top: 1rem;
-	}
-	.submission-widget {
-		.dropdown {
-			.dropdown-menu {
-				&.show {
-					transform: translate3d(0px, 28px, 0px)!important;
-				}
-			}
-		}
 	}
 	footer {
 		height: 50px;

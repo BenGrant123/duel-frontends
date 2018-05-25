@@ -7393,10 +7393,12 @@ a.text-dark:hover, a.text-dark:focus {
     .submission-widget .dropdown .dropdown-menu {
       border: 1px solid #eaeaea;
       border-radius: 4px; }
-      .submission-widget .dropdown .dropdown-menu.show {
-        transform: translate3d(-129px, 28px, 0px) !important; }
     .submission-widget .dropdown a:hover {
       color: #05b8c1; }
+  .submission-widget button {
+    background-color: #fff;
+    border: none;
+    padding: 0px 3px; }
   .submission-widget .widget-header, .submission-widget .widget-main {
     padding: 1rem; }
   .submission-widget .widget-product {
@@ -7722,6 +7724,10 @@ p.share {
     float: right;
     width: 250px; } }
 
+@media (max-width: 576px) {
+  .submission-widget .dropdown .dropdown-menu.show {
+    transform: translate3d(-129px, 28px, 0px) !important; } }
+
 @media (min-width: 576px) {
   .col-xs-12 {
     margin-bottom: 0rem; }
@@ -7730,8 +7736,6 @@ p.share {
     float: left; }
   .col-sm-6:last-child {
     margin-top: 1rem; }
-  .submission-widget .dropdown .dropdown-menu.show {
-    transform: translate3d(0px, 28px, 0px) !important; }
   footer {
     height: 50px; } }
 
