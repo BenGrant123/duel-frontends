@@ -57,6 +57,9 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.form-group {
+		width: 100%;
+	}
 	.form-check {
 		display: flex;
 		flex-shrink: 0;
@@ -134,6 +137,20 @@
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
 		position: relative;
+	}
+	.dropdown {
+		margin-left: auto;
+		display: flex;
+		.dropdown-menu {
+			border: 1px solid #eaeaea;
+			border-radius: 4px;
+			&.show {
+				transform: translate3d(-129px, 28px, 0px)!important;
+			}
+		}
+		a:hover {
+			color: #05b8c1;
+		}
 	}
 	.widget-header, .widget-main {
 		padding: 1rem;
@@ -597,6 +614,15 @@ p.share {
 	}
 	.col-sm-6:last-child {
 		margin-top: 1rem;
+	}
+	.submission-widget {
+		.dropdown {
+			.dropdown-menu {
+				&.show {
+					transform: translate3d(0px, 28px, 0px)!important;
+				}
+			}
+		}
 	}
 	footer {
 		height: 50px;

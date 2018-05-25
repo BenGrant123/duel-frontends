@@ -28,22 +28,16 @@
 					<h2>Cineworld</h2>
 					<div class="toolbar">
 						<p class="share">share</p>
-						<svg width="20" height="20" data-toggle="collapse" data-target="#modalsMenuToggler" class="icon icon-three-dots collapse">
-					    	<use xlink:href="#icon-three-dots"></use>
-					    </svg>
-						<div class="collapse modals-menu-collapse" id="modalsMenuToggler">
-						    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-						      <li data-toggle="collapse" data-target=".modals-menu-collapse" class="nav-item active">
-						        <a data-toggle="modal" data-target="#modal1" class="nav-link" href="#">Edit<span class="sr-only">(current)</span></a>
-						      </li>
-						      <li data-toggle="collapse" data-target=".modals-menu-collapse" class="nav-item">
-						        <a data-toggle="modal" data-target="#modal2" class="nav-link" href="#">Permissions</a>
-						      </li>
-						      <li data-toggle="collapse" data-target=".modals-menu-collapse" class="nav-item">
-						        <a data-toggle="modal" data-target="#modal3" class="nav-link" href="#">Delete</a>
-						      </li>
-						    </ul>
+						<div class="dropdown">
+						  <svg class="icon icon-three-dots" width="20" height="20" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <use xlink:href="#icon-three-dots"></use>
+						  </svg>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a data-toggle="modal" data-target="#modal1" class="dropdown-item" href="#modal1">Edit</a>
+						    <a data-toggle="modal" data-target="#modal2" class="dropdown-item" href="#modal2">Permissions</a>
+						    <a data-toggle="modal" data-target="#modal3" class="dropdown-item" href="#modal3">Delete</a>
 						  </div>
+						</div>
 					</div>
 					<div class="testimonial">
 						<span class="testimonial-date">
