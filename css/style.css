@@ -7590,7 +7590,7 @@ header {
 footer {
   padding: 0.5rem 1rem;
   width: 100%;
-  height: 100px;
+  min-height: 60px;
   display: flex; }
   footer .left-items, footer .right-items {
     display: block;
@@ -7714,7 +7714,8 @@ p.share {
     width: auto; }
   footer .icon-duel-small {
     display: flex;
-    margin-right: 1rem; } }
+    margin-right: 1rem;
+    margin-bottom: 0; } }
 
 @media (min-width: 420px) {
   .submission-widget .widget-product img {
@@ -7737,7 +7738,7 @@ p.share {
   .col-sm-6:last-child {
     margin-top: 1rem; }
   footer {
-    height: 50px; } }
+    min-height: 50px; } }
 
 @media (min-width: 768px) {
   .col-md-2-5 {

@@ -432,7 +432,7 @@ header {
 footer {
 	padding: 0.5rem 1rem;
 	width: 100%;
-  	height: 100px;
+  	min-height: 60px;
 	display: flex;
 	.left-items, .right-items {
 		display: block;
@@ -589,6 +589,7 @@ p.share {
 		.icon-duel-small {
 			display: flex;
 			margin-right: 1rem;
+			margin-bottom: 0;
 		}
 	}
 }
@@ -629,7 +630,7 @@ p.share {
 		margin-top: 1rem;
 	}
 	footer {
-		height: 50px;
+		min-height: 50px;
 	}
 }
 @media (min-width: 768px) {
