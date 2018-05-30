@@ -14,7 +14,7 @@
 	<main class="container">
 		<div class="toolbar">
 			<section>
-				<h1 class="mb-4">My submissions</h1>
+				<h1>My submissions</h1>
 			</section>
 			<div class="rail-select">
 			  <div class="select-side">

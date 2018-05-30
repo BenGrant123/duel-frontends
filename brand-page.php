@@ -14,7 +14,7 @@
 	<main class="container">
 		<div class="toolbar">
 			<section>
-				<h1 class="mb-4">My submissions</h1>
+				<h1>My submissions</h1>
 			</section>
 			<div class="rail-select">
 			  <div class="select-side">
@@ -31,13 +31,10 @@
 			<?php foreach (range(1, 12) as $product): ?>
 			<div class="col-xs-4-5 col-sm-2-5 col-md-1-5 col-lg-1-5">
 				<article>
-					<img src="static/img/client-logo.jpg" alt="" class="logo img-fluid">
 					<a href="submission-page.php">
 						<img src="static/img/client-image.png" alt="" class="bg img-fluid">
 						<p class="testimonial">Testimonial goes here! Testimonial goes here! Testimonial goes here ... <span class="testimonial-by">Maria F</span></p>
 					</a>
-					<h2>Cineworld</h2>
-					
 					<p class="testimonial-date">
 						22/07/2018
 					</p>
