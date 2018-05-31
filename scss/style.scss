@@ -31,6 +31,7 @@
     font-weight: bold;
     font-style: normal;
 }
+$brand-color: #ff4500;
 .modal-header {
 	
 	h5 {
@@ -123,9 +124,69 @@
 .col-xs-12 {
 	margin-bottom: 1rem;
 }
-
+.login-widget {
+	position: relative;
+	margin: 0 auto 3.5rem auto;
+	img {
+		&.icon-brand {
+			display: flex;
+			margin: 0 auto;
+			width: 80px;
+			height: 80px;
+			border-radius: 4px;
+		}
+	}
+	.inner {
+		margin-top: 3.5rem;
+		border: 1px solid #eaeaea;
+		border-radius: 4px;
+	}
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	.widget-main, .widget-header {
+		padding: 1rem;
+	}
+	.widget-header {
+		border-bottom: 2px solid $brand-color;
+		padding-bottom: 0.5rem;
+		img {
+			
+			&.icon-brand {
+				margin: 0 auto;
+				width: 80px;
+				height: 80px;
+				border-radius: 4px;
+				display: flex;
+				transform: translateY(-100%);
+			}
+		}
+		h2 {
+			font-size: 16px;
+			transform: none;
+			position: static;
+		}
+	}
+	.widget-main {
+		form {
+			button {
+				width: 100%;
+				background-color: $brand-color;
+				&.btn-primary {
+					color: #fff;
+					background-color: $brand-color;
+					border-color: $brand-color;
+				}
+			}
+			#loginHelp {
+				color: $brand-color;
+				font-size: 12px;
+				text-align: center;
+			}
+		}
+	}
+}
 .submission-widget {
-
 	vertical-align: top;
 	position: relative;
 	padding-left: 10px;
@@ -376,6 +437,7 @@ header, footer {
 	top: 0;
 	left: 0;
 	right: 0;
+	min-height: 70px;
 }
 
 header {
@@ -648,7 +710,9 @@ p.share {
 }
 @media (min-width: 576px) {
 	.col-xs-12 {
-		margin-bottom: 0rem;
+		&:not(.login-widget) {
+			margin-bottom: 0rem;
+		}
 	}
 	.col-sm-2-5 {
 		flex: 0 0 50%;

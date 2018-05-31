@@ -7376,6 +7376,50 @@ a.text-dark:hover, a.text-dark:focus {
 .col-xs-12 {
   margin-bottom: 1rem; }
 
+.login-widget {
+  position: relative;
+  margin: 0 auto 3.5rem auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px; }
+  .login-widget img.icon-brand {
+    display: flex;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px; }
+  .login-widget .inner {
+    margin-top: 3.5rem;
+    border: 1px solid #eaeaea;
+    border-radius: 4px; }
+  .login-widget .widget-main, .login-widget .widget-header {
+    padding: 1rem; }
+  .login-widget .widget-header {
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 0.5rem; }
+    .login-widget .widget-header img.icon-brand {
+      margin: 0 auto;
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      display: flex;
+      transform: translateY(-100%); }
+    .login-widget .widget-header h2 {
+      font-size: 16px;
+      transform: none;
+      position: static; }
+  .login-widget .widget-main form button {
+    width: 100%;
+    background-color: #ff4500; }
+    .login-widget .widget-main form button.btn-primary {
+      color: #fff;
+      background-color: #ff4500;
+      border-color: #ff4500; }
+  .login-widget .widget-main form #loginHelp {
+    color: #ff4500;
+    font-size: 12px;
+    text-align: center; }
+
 .submission-widget {
   vertical-align: top;
   position: relative;
@@ -7555,7 +7599,8 @@ header, footer {
   position: fixed !important;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  min-height: 70px; }
 
 header {
   color: #fff; }
@@ -7754,7 +7799,7 @@ p.share {
     transform: translate3d(-129px, 28px, 0px) !important; } }
 
 @media (min-width: 576px) {
-  .col-xs-12 {
+  .col-xs-12:not(.login-widget) {
     margin-bottom: 0rem; }
   .col-sm-2-5 {
     flex: 0 0 50%;
