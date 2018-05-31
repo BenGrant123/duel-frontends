@@ -440,23 +440,36 @@ footer {
   	min-height: 60px;
 	display: flex;
 	.left-items, .right-items {
-		display: block;
+		display: flex;
 		align-items: center;
-		width: 50%;
+		width: auto;
+	}
+	.left-items {
+		flex-wrap: wrap;
 	}
 	.right-items {
 		margin-left: auto;
 		padding-left: 15px;
 	}
 	.icon-duel-small {
-		display: block;
-		margin-right: 5px;
-		margin-bottom: 5px;
+		display: flex;
+		margin-right: 2px;
 		width: 26px!important;
 		height: 26px!important;
+		min-width: 26px!important;
+		min-height: 26px!important;
+	}
+	.powered-by {
+		font-size: 8px;
+		width: 30px;
+		margin-right: 1rem;
+		display: flex;
 	}
 	.copyright {
 		text-transform: uppercase;
+		display: flex;
+		margin-top: 5px;
+		flex-wrap: wrap;
 	}
 	.footer-link {
 		color: #fff;
@@ -490,12 +503,9 @@ article {
 			}
 		}
 	}
-	
-	
 	p {
 		display: none;
 	}
-	
 	.bg {
 		border-radius: 4px;
 	}
@@ -504,7 +514,6 @@ article {
 		position: absolute;
 		z-index: 1000;
 	}
-	
 	.icon-three-dots {
 		position: absolute;
 		top: 100%;
@@ -589,11 +598,20 @@ p.share {
 		.left-items, .right-items {
 			display: flex;
 			width: auto;
+			flex-wrap: nowrap;
 		}
 		.icon-duel-small {
 			display: flex;
-			margin-right: 1rem;
 			margin-bottom: 0;
+		}
+		.copyright {
+			margin: 0 auto;
+			flex-wrap: nowrap;
+		}
+		&:not(.brand-footer) {
+			.icon-duel-small {
+				margin-right: 1rem;
+			}
 		}
 	}
 }

@@ -7601,20 +7601,31 @@ footer {
   min-height: 60px;
   display: flex; }
   footer .left-items, footer .right-items {
-    display: block;
+    display: flex;
     align-items: center;
-    width: 50%; }
+    width: auto; }
+  footer .left-items {
+    flex-wrap: wrap; }
   footer .right-items {
     margin-left: auto;
     padding-left: 15px; }
   footer .icon-duel-small {
-    display: block;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    display: flex;
+    margin-right: 2px;
     width: 26px !important;
-    height: 26px !important; }
+    height: 26px !important;
+    min-width: 26px !important;
+    min-height: 26px !important; }
+  footer .powered-by {
+    font-size: 8px;
+    width: 30px;
+    margin-right: 1rem;
+    display: flex; }
   footer .copyright {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap; }
   footer .footer-link {
     color: #fff;
     text-decoration: none;
@@ -7718,11 +7729,16 @@ p.share {
 @media (min-width: 350px) {
   footer .left-items, footer .right-items {
     display: flex;
-    width: auto; }
+    width: auto;
+    flex-wrap: nowrap; }
   footer .icon-duel-small {
     display: flex;
-    margin-right: 1rem;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  footer .copyright {
+    margin: 0 auto;
+    flex-wrap: nowrap; }
+  footer:not(.brand-footer) .icon-duel-small {
+    margin-right: 1rem; } }
 
 @media (min-width: 420px) {
   .container .toolbar {

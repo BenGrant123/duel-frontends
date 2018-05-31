@@ -48,7 +48,7 @@
 			<?php endforeach; ?>
 		</div>
 	</main>
-	<?php include 'includes/footer.php';?>
+	<?php include 'includes/brand-footer.php';?>
 
 </body>
 </html>
