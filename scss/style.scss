@@ -436,15 +436,13 @@ header {
 
 footer {
 	padding: 0.5rem 1rem;
-	width: 100%;
+	// width: 100%;
   	min-height: 60px;
 	display: flex;
 	.left-items, .right-items {
 		display: flex;
 		align-items: center;
 		width: auto;
-	}
-	.left-items {
 		flex-wrap: wrap;
 	}
 	.right-items {
@@ -598,7 +596,7 @@ p.share {
 		.left-items, .right-items {
 			display: flex;
 			width: auto;
-			flex-wrap: nowrap;
+			// flex-wrap: nowrap;
 		}
 		.icon-duel-small {
 			display: flex;
@@ -662,6 +660,9 @@ p.share {
 	}
 	footer {
 		min-height: 50px;
+		.left-items, .right-items {
+			flex-wrap: nowrap;
+		}
 	}
 }
 @media (min-width: 768px) {
