@@ -3,7 +3,7 @@
   
 	  <svg width="40" height="40" icon="duel" class="icon icon-duel">
 	    	<use xlink:href="#icon-duel"></use>
-	    </svg>
+	  </svg>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>

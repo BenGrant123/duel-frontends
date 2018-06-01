@@ -165,7 +165,7 @@
 			
 		</div><!-- /row -->
 	</main>
-	<?php include 'includes/modals.php';?>
+	<?php include 'includes/modals/submission-page.php';?>
 	</div>
 	<?php include 'includes/footer.php';?>
 

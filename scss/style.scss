@@ -33,7 +33,6 @@
 }
 $brand-color: #ff4500;
 .modal-header {
-	
 	h5 {
 		font-size: 16px;
 		text-transform: uppercase;
@@ -41,76 +40,6 @@ $brand-color: #ff4500;
 		font-weight: normal;
 	}
 	border-bottom: 2px solid #01b8d7;
-}
-.modal-body {
-	font-size: 12px;
-	color: #222;
-	h3 {
-		font-size: 12px;
-	}
-	p {
-		margin-top: 0.5rem;
-	}
-	.form-control {
-		font-size: 12px;
-	}
-	form {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.form-group {
-		width: 100%;
-	}
-	.form-check {
-		display: flex;
-		flex-shrink: 0;
-		align-items: center;
-		width: 100%;
-		font-size: 12px;
-	    color: #222;
-	    margin-bottom: 0.6rem;
-	    padding-left: 0;
-	}
-	.form-check-input, .form-check-label {
-		align-items: center;
-		position: relative;
-		width: auto;
-	}
-	.form-check-input {
-		margin: 0 7px 0 0;
-	}
-}
-.modal-footer {
-	border-top: none;
-	padding-top: 0rem;
-	button {
-		font-size: 12px;
-		border-color: #eaeaea;
-		&.btn {
-			&.btn-secondary {
-				background-color: #fff;
-				color: #222;
-				border-color: #eaeaea;
-			}
-			&.btn-primary {
-				color: #fff;
-				background-color: #05b8c1;
-			}
-			&.btn-primary:hover {
-				color: #fff;
-				background-color: #05aaaa;
-				border-color: #eaeaea;
-			}
-			&.btn-delete {
-				color: #fff;
-				background-color: #e8634b;
-			}
-			&.btn-delete:hover {
-				color: #fff;
-				background-color: #d15646;
-			}
-		}
-	}
 }
 
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
@@ -127,19 +56,18 @@ $brand-color: #ff4500;
 .login-widget {
 	position: relative;
 	margin: 0 auto 3.5rem auto;
-	img {
-		&.icon-brand {
-			display: flex;
-			margin: 0 auto;
-			width: 80px;
-			height: 80px;
-			border-radius: 4px;
-		}
+	.icon-duel, .icon-brand {
+		display: flex;
+		margin: 0 auto;
+		width: 80px;
+		height: 80px;
+		border-radius: 4px;
 	}
 	.inner {
 		margin-top: 3.5rem;
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
+		padding-bottom: 3.5rem;
 	}
 	padding-left: 10px;
 	padding-right: 10px;
@@ -148,7 +76,7 @@ $brand-color: #ff4500;
 		padding: 1rem;
 	}
 	.widget-header {
-		border-bottom: 2px solid $brand-color;
+		border-bottom: 2px solid #05b8c1;
 		padding-bottom: 0.5rem;
 		img {
 			
@@ -165,27 +93,51 @@ $brand-color: #ff4500;
 			font-size: 16px;
 			transform: none;
 			position: static;
+			font-weight: bold;
 		}
 	}
 	.widget-main {
 		form {
 			button {
 				width: 100%;
-				background-color: $brand-color;
-				&.btn-primary {
+				&.btn-primary, &.btn-primary:hover {
 					color: #fff;
-					background-color: $brand-color;
-					border-color: $brand-color;
+					background-color: #05b8c1;
+					border-color: #05b8c1;
 				}
 			}
-			#loginHelp {
-				color: $brand-color;
-				font-size: 12px;
+			small {
 				text-align: center;
+				a {
+					color: #05b8c1;
+					font-size: 12px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&.brand-login-widget {
+		.widget-header {
+			border-bottom: 2px solid $brand-color;
+		}
+		.widget-main {
+			form {
+				button {
+					&.btn-primary, &.btn-primary:hover {
+						background-color: $brand-color;
+						border-color: $brand-color;
+					}
+				}
+				small {
+					a {
+						color: $brand-color;
+					}
+				}
 			}
 		}
 	}
 }
+
 .submission-widget {
 	vertical-align: top;
 	position: relative;
@@ -196,7 +148,6 @@ $brand-color: #ff4500;
 		text-decoration: none;
 		color: #05b8c1;
 	}
-
 	.inner {
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
@@ -223,7 +174,6 @@ $brand-color: #ff4500;
 	}
 	.widget-product {
 		padding: 0.75rem 1.2rem 1.2rem 1.2rem;
-		
 		img {
 			display: block;
 			height: 70px;
@@ -267,7 +217,6 @@ $brand-color: #ff4500;
 			border-radius: 50%;
 			background-color: #eaeaea;
 		}
-		
 	}
 	.widget-main {
 		form {
@@ -498,7 +447,6 @@ header {
 
 footer {
 	padding: 0.5rem 1rem;
-	// width: 100%;
   	min-height: 60px;
 	display: flex;
 	.left-items, .right-items {
@@ -652,6 +600,113 @@ p.share {
 	width: 100px;
 	padding: 5px 10px;
 }
+
+// Modals
+
+.login-modal {
+	.modal-header {
+		h5 {
+			text-transform: none;
+			font-weight: bold;
+		}
+	}
+	&.brand-login-modal {
+		.modal-header {
+			border-bottom: 2px solid $brand-color;
+		}
+	}
+	.modal-body {
+		font-size: 16px;
+	}
+	.modal-footer {
+		button {
+			font-size: 16px;
+		}
+	}
+}
+
+.modal-body {
+	font-size: 12px;
+
+	color: #222;
+	h3 {
+		font-size: 12px;
+	}
+	p {
+		margin-top: 0.5rem;
+	}
+	.form-control {
+		font-size: 12px;
+	}
+	form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.form-group {
+		width: 100%;
+	}
+	.form-check {
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
+		width: 100%;
+		font-size: 12px;
+	    color: #222;
+	    margin-bottom: 0.6rem;
+	    padding-left: 0;
+	}
+	.form-check-input, .form-check-label {
+		align-items: center;
+		position: relative;
+		width: auto;
+	}
+	.form-check-input {
+		margin: 0 7px 0 0;
+	}
+}
+.modal-footer {
+	border-top: none;
+	padding-top: 0rem;
+	button {
+		font-size: 12px;
+		border-color: #eaeaea;
+		&.btn {
+			&.btn-secondary {
+				background-color: #fff;
+				color: #222;
+				border-color: #eaeaea;
+			}
+			&.btn-primary {
+				color: #fff;
+				background-color: #05b8c1;
+			}
+			&.btn-primary:hover {
+				color: #fff;
+				background-color: #05aaaa;
+				border-color: #eaeaea;
+			}
+			&.btn-delete {
+				color: #fff;
+				background-color: #e8634b;
+			}
+			&.btn-delete:hover {
+				color: #fff;
+				background-color: #d15646;
+			}
+		}
+	}
+}
+.brand-login-modal {
+	.modal-footer {
+		button {
+			&.btn-primary, &.btn-primary:hover {
+				background-color: $brand-color;
+			}
+		}
+	}
+}
+
+// Media Queries
 
 @media (min-width: 350px) {
 	footer {

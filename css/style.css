@@ -7311,60 +7311,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: #222;
     font-weight: normal; }
 
-.modal-body {
-  font-size: 12px;
-  color: #222; }
-  .modal-body h3 {
-    font-size: 12px; }
-  .modal-body p {
-    margin-top: 0.5rem; }
-  .modal-body .form-control {
-    font-size: 12px; }
-  .modal-body form {
-    display: flex;
-    flex-wrap: wrap; }
-  .modal-body .form-group {
-    width: 100%; }
-  .modal-body .form-check {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    width: 100%;
-    font-size: 12px;
-    color: #222;
-    margin-bottom: 0.6rem;
-    padding-left: 0; }
-  .modal-body .form-check-input, .modal-body .form-check-label {
-    align-items: center;
-    position: relative;
-    width: auto; }
-  .modal-body .form-check-input {
-    margin: 0 7px 0 0; }
-
-.modal-footer {
-  border-top: none;
-  padding-top: 0rem; }
-  .modal-footer button {
-    font-size: 12px;
-    border-color: #eaeaea; }
-    .modal-footer button.btn.btn-secondary {
-      background-color: #fff;
-      color: #222;
-      border-color: #eaeaea; }
-    .modal-footer button.btn.btn-primary {
-      color: #fff;
-      background-color: #05b8c1; }
-    .modal-footer button.btn.btn-primary:hover {
-      color: #fff;
-      background-color: #05aaaa;
-      border-color: #eaeaea; }
-    .modal-footer button.btn.btn-delete {
-      color: #fff;
-      background-color: #e8634b; }
-    .modal-footer button.btn.btn-delete:hover {
-      color: #fff;
-      background-color: #d15646; }
-
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
   min-height: 1px;
   padding-right: 15px;
@@ -7382,7 +7328,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px; }
-  .login-widget img.icon-brand {
+  .login-widget .icon-duel, .login-widget .icon-brand {
     display: flex;
     margin: 0 auto;
     width: 80px;
@@ -7391,11 +7337,12 @@ a.text-dark:hover, a.text-dark:focus {
   .login-widget .inner {
     margin-top: 3.5rem;
     border: 1px solid #eaeaea;
-    border-radius: 4px; }
+    border-radius: 4px;
+    padding-bottom: 3.5rem; }
   .login-widget .widget-main, .login-widget .widget-header {
     padding: 1rem; }
   .login-widget .widget-header {
-    border-bottom: 2px solid #ff4500;
+    border-bottom: 2px solid #05b8c1;
     padding-bottom: 0.5rem; }
     .login-widget .widget-header img.icon-brand {
       margin: 0 auto;
@@ -7407,18 +7354,27 @@ a.text-dark:hover, a.text-dark:focus {
     .login-widget .widget-header h2 {
       font-size: 16px;
       transform: none;
-      position: static; }
+      position: static;
+      font-weight: bold; }
   .login-widget .widget-main form button {
-    width: 100%;
-    background-color: #ff4500; }
-    .login-widget .widget-main form button.btn-primary {
+    width: 100%; }
+    .login-widget .widget-main form button.btn-primary, .login-widget .widget-main form button.btn-primary:hover {
       color: #fff;
-      background-color: #ff4500;
-      border-color: #ff4500; }
-  .login-widget .widget-main form #loginHelp {
-    color: #ff4500;
-    font-size: 12px;
+      background-color: #05b8c1;
+      border-color: #05b8c1; }
+  .login-widget .widget-main form small {
     text-align: center; }
+    .login-widget .widget-main form small a {
+      color: #05b8c1;
+      font-size: 12px;
+      text-decoration: none; }
+  .login-widget.brand-login-widget .widget-header {
+    border-bottom: 2px solid #ff4500; }
+  .login-widget.brand-login-widget .widget-main form button.btn-primary, .login-widget.brand-login-widget .widget-main form button.btn-primary:hover {
+    background-color: #ff4500;
+    border-color: #ff4500; }
+  .login-widget.brand-login-widget .widget-main form small a {
+    color: #ff4500; }
 
 .submission-widget {
   vertical-align: top;
@@ -7768,6 +7724,76 @@ p.share {
   display: flex;
   width: 100px;
   padding: 5px 10px; }
+
+.login-modal .modal-header h5 {
+  text-transform: none;
+  font-weight: bold; }
+
+.login-modal.brand-login-modal .modal-header {
+  border-bottom: 2px solid #ff4500; }
+
+.login-modal .modal-body {
+  font-size: 16px; }
+
+.login-modal .modal-footer button {
+  font-size: 16px; }
+
+.modal-body {
+  font-size: 12px;
+  color: #222; }
+  .modal-body h3 {
+    font-size: 12px; }
+  .modal-body p {
+    margin-top: 0.5rem; }
+  .modal-body .form-control {
+    font-size: 12px; }
+  .modal-body form {
+    display: flex;
+    flex-wrap: wrap; }
+  .modal-body .form-group {
+    width: 100%; }
+  .modal-body .form-check {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    color: #222;
+    margin-bottom: 0.6rem;
+    padding-left: 0; }
+  .modal-body .form-check-input, .modal-body .form-check-label {
+    align-items: center;
+    position: relative;
+    width: auto; }
+  .modal-body .form-check-input {
+    margin: 0 7px 0 0; }
+
+.modal-footer {
+  border-top: none;
+  padding-top: 0rem; }
+  .modal-footer button {
+    font-size: 12px;
+    border-color: #eaeaea; }
+    .modal-footer button.btn.btn-secondary {
+      background-color: #fff;
+      color: #222;
+      border-color: #eaeaea; }
+    .modal-footer button.btn.btn-primary {
+      color: #fff;
+      background-color: #05b8c1; }
+    .modal-footer button.btn.btn-primary:hover {
+      color: #fff;
+      background-color: #05aaaa;
+      border-color: #eaeaea; }
+    .modal-footer button.btn.btn-delete {
+      color: #fff;
+      background-color: #e8634b; }
+    .modal-footer button.btn.btn-delete:hover {
+      color: #fff;
+      background-color: #d15646; }
+
+.brand-login-modal .modal-footer button.btn-primary, .brand-login-modal .modal-footer button.btn-primary:hover {
+  background-color: #ff4500; }
 
 @media (min-width: 350px) {
   footer .left-items, footer .right-items {

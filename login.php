@@ -12,8 +12,10 @@
 
 	<main class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-4 login-widget brand-login-widget">
-				<img src="static/img/client-logo.jpg" class="icon-brand">
+			<div class="col-xs-12 col-sm-6 col-md-4 login-widget">
+				<svg width="80" height="80" icon="duel" class="icon icon-duel">
+				    <use xlink:href="#icon-duel"></use>
+				</svg>
 				<div class="inner">
 					
 					<div class="widget-header">
@@ -30,6 +32,9 @@
 						    <input type="text" class="form-control" id="userPassword" aria-describedby="userPassword">
 						  </div>
 						  <button type="button" class="btn btn-primary">Login</button>
+						  <!--<div class="loginHelp">
+						  	<a data-toggle="modal" data-target="#modal1" href="#modal1">Forgot your password or Activate your account.</a>
+						  </div>-->
 						  <small class="loginHelp form-text">
 						  	<a data-toggle="modal" data-target="#modal1" href="#modal1">Forgot your password or Activate your account.</a>
 						  </small>
@@ -40,8 +45,8 @@
 			</div>
 		</div><!-- /row -->
 	</main>
-	<?php include 'includes/modals/brand-login.php';?>
-	<?php include 'includes/brand-footer.php';?>
+	<?php include 'includes/modals/login.php';?>
+	<?php include 'includes/footer.php';?>
 
 </body>
 </html>
