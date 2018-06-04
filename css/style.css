@@ -7303,13 +7303,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: bold;
   font-style: normal; }
 
-.modal-header {
-  border-bottom: 2px solid #01b8d7; }
-  .modal-header h5 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #222;
-    font-weight: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
   min-height: 1px;
@@ -7328,6 +7325,8 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px; }
+  .login-widget label {
+    margin-bottom: 0.3rem; }
   .login-widget .icon-duel, .login-widget .icon-brand {
     display: flex;
     margin: 0 auto;
@@ -7356,13 +7355,17 @@ a.text-dark:hover, a.text-dark:focus {
       transform: none;
       position: static;
       font-weight: bold; }
+  .login-widget .widget-main form .form-control {
+    font-size: 16px; }
   .login-widget .widget-main form button {
+    margin-top: 1.2rem;
     width: 100%; }
     .login-widget .widget-main form button.btn-primary, .login-widget .widget-main form button.btn-primary:hover {
       color: #fff;
       background-color: #05b8c1;
       border-color: #05b8c1; }
   .login-widget .widget-main form small {
+    margin-top: 0.6rem;
     text-align: center; }
     .login-widget .widget-main form small a {
       color: #05b8c1;
@@ -7530,10 +7533,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 html {
   position: relative;
-  min-height: 100%;
-  padding-top: 100px; }
+  min-height: 100%; }
 
 body {
+  padding: 100px 0 60px 0;
+  position: relative;
+  min-height: 100vh;
   font-family: roboto_wf;
   font-weight: 400; }
   body h1 {
@@ -7591,12 +7596,17 @@ header {
   .container .toolbar .form-control {
     border: 1px solid #eaeaea;
     font-size: 12px;
-    color: #444444; }
+    color: #444444;
+    font-size: 16px; }
 
 .container .row {
   display: flex; }
 
 footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 0.5rem 1rem;
   min-height: 60px;
   display: flex; }
@@ -7623,8 +7633,9 @@ footer {
   footer .copyright {
     text-transform: uppercase;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 5px;
-    flex-wrap: wrap; }
+    margin-bottom: 5px; }
   footer .footer-link {
     color: #fff;
     text-decoration: none;
@@ -7725,6 +7736,17 @@ p.share {
   width: 100px;
   padding: 5px 10px; }
 
+.modal-header {
+  border-bottom: 2px solid #01b8d7; }
+  .modal-header h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: normal; }
+
+.login-modal label {
+  margin-bottom: 0.3rem; }
+
 .login-modal .modal-header h5 {
   text-transform: none;
   font-weight: bold; }
@@ -7734,6 +7756,8 @@ p.share {
 
 .login-modal .modal-body {
   font-size: 16px; }
+  .login-modal .modal-body .form-control {
+    font-size: 16px; }
 
 .login-modal .modal-footer button {
   font-size: 16px; }
@@ -7792,6 +7816,11 @@ p.share {
       color: #fff;
       background-color: #d15646; }
 
+.login-modal .modal-footer {
+  padding-bottom: 1.8rem; }
+  .login-modal .modal-footer button {
+    min-width: 120px; }
+
 .brand-login-modal .modal-footer button.btn-primary, .brand-login-modal .modal-footer button.btn-primary:hover {
   background-color: #ff4500; }
 
@@ -7802,9 +7831,6 @@ p.share {
   footer .icon-duel-small {
     display: flex;
     margin-bottom: 0; }
-  footer .copyright {
-    margin: 0 auto;
-    flex-wrap: nowrap; }
   footer:not(.brand-footer) .icon-duel-small {
     margin-right: 1rem; } }
 
@@ -7834,9 +7860,7 @@ p.share {
   .col-sm-6:last-child {
     margin-top: 1rem; }
   footer {
-    min-height: 50px; }
-    footer .left-items, footer .right-items {
-      flex-wrap: nowrap; } }
+    min-height: 50px; } }
 
 @media (min-width: 768px) {
   .col-md-2-5 {
@@ -7848,7 +7872,13 @@ p.share {
     max-width: 33.33%;
     width: 100%; }
   .col-sm-6, .col-sm-6:last-child {
-    margin-top: 0; } }
+    margin-top: 0; }
+  footer .left-items, footer .right-items {
+    flex-wrap: nowrap; }
+  footer .copyright {
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 0; } }
 
 @media (min-width: 992px) {
   .col-lg-1-5 {

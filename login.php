@@ -32,9 +32,6 @@
 						    <input type="text" class="form-control" id="userPassword" aria-describedby="userPassword">
 						  </div>
 						  <button type="button" class="btn btn-primary">Login</button>
-						  <!--<div class="loginHelp">
-						  	<a data-toggle="modal" data-target="#modal1" href="#modal1">Forgot your password or Activate your account.</a>
-						  </div>-->
 						  <small class="loginHelp form-text">
 						  	<a data-toggle="modal" data-target="#modal1" href="#modal1">Forgot your password or Activate your account.</a>
 						  </small>

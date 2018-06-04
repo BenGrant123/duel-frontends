@@ -32,14 +32,12 @@
     font-style: normal;
 }
 $brand-color: #ff4500;
-.modal-header {
-	h5 {
-		font-size: 16px;
-		text-transform: uppercase;
-		color: #222;
-		font-weight: normal;
-	}
-	border-bottom: 2px solid #01b8d7;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 .col-xs-4-5, .col-sm-2-5, .col-md-2-5, .col-lg-1-5, .col-xl-1-5 {
@@ -56,6 +54,9 @@ $brand-color: #ff4500;
 .login-widget {
 	position: relative;
 	margin: 0 auto 3.5rem auto;
+	label {
+		margin-bottom: 0.3rem;
+	}
 	.icon-duel, .icon-brand {
 		display: flex;
 		margin: 0 auto;
@@ -98,7 +99,11 @@ $brand-color: #ff4500;
 	}
 	.widget-main {
 		form {
+			.form-control {
+				font-size: 16px;
+			}
 			button {
+				margin-top: 1.2rem;
 				width: 100%;
 				&.btn-primary, &.btn-primary:hover {
 					color: #fff;
@@ -107,6 +112,7 @@ $brand-color: #ff4500;
 				}
 			}
 			small {
+				margin-top: 0.6rem;
 				text-align: center;
 				a {
 					color: #05b8c1;
@@ -350,15 +356,15 @@ $brand-color: #ff4500;
 	}
 }
 
-
-
 html {
   position: relative;
   min-height: 100%;
-  padding-top: 100px;
 }
 
 body {
+  padding: 100px 0 60px 0;
+  position: relative;
+  min-height: 100vh;
   font-family: roboto_wf;
   font-weight: 400;
   h1 {
@@ -436,9 +442,8 @@ header {
 			border: 1px solid #eaeaea;
 			font-size: 12px;
 			color: #444444;
-
+			font-size: 16px;
 		}
-		
 	}
 	.row {
 		display: flex;
@@ -446,6 +451,10 @@ header {
 }
 
 footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	padding: 0.5rem 1rem;
   	min-height: 60px;
 	display: flex;
@@ -476,8 +485,9 @@ footer {
 	.copyright {
 		text-transform: uppercase;
 		display: flex;
-		margin-top: 5px;
 		flex-wrap: wrap;
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
 	.footer-link {
 		color: #fff;
@@ -603,7 +613,20 @@ p.share {
 
 // Modals
 
+.modal-header {
+	h5 {
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #222;
+		font-weight: normal;
+	}
+	border-bottom: 2px solid #01b8d7;
+}
+
 .login-modal {
+	label {
+		margin-bottom: 0.3rem;
+	}
 	.modal-header {
 		h5 {
 			text-transform: none;
@@ -617,6 +640,9 @@ p.share {
 	}
 	.modal-body {
 		font-size: 16px;
+		.form-control {
+			font-size: 16px;
+		}
 	}
 	.modal-footer {
 		button {
@@ -696,6 +722,14 @@ p.share {
 		}
 	}
 }
+.login-modal {
+	.modal-footer {
+		padding-bottom: 1.8rem;
+		button {
+			min-width: 120px;
+		}
+	}
+}
 .brand-login-modal {
 	.modal-footer {
 		button {
@@ -713,15 +747,10 @@ p.share {
 		.left-items, .right-items {
 			display: flex;
 			width: auto;
-			// flex-wrap: nowrap;
 		}
 		.icon-duel-small {
 			display: flex;
 			margin-bottom: 0;
-		}
-		.copyright {
-			margin: 0 auto;
-			flex-wrap: nowrap;
 		}
 		&:not(.brand-footer) {
 			.icon-duel-small {
@@ -779,9 +808,6 @@ p.share {
 	}
 	footer {
 		min-height: 50px;
-		.left-items, .right-items {
-			flex-wrap: nowrap;
-		}
 	}
 }
 @media (min-width: 768px) {
@@ -797,6 +823,16 @@ p.share {
 	}
 	.col-sm-6, .col-sm-6:last-child {
 		margin-top: 0;
+	}
+	footer {
+		.left-items, .right-items {
+			flex-wrap: nowrap;
+		}
+		.copyright {
+			flex-wrap: nowrap;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
 	}
 }
 @media (min-width: 992px) {
