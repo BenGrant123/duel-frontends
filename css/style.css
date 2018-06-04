@@ -7821,8 +7821,6 @@ p.share {
 
 .login-modal .modal-footer {
   padding-bottom: 1.8rem; }
-  .login-modal .modal-footer button {
-    min-width: 120px; }
 
 .brand-login-modal .modal-footer button.btn-primary, .brand-login-modal .modal-footer button.btn-primary:hover {
   background-color: #ff4500; }
@@ -7862,6 +7860,10 @@ p.share {
     width: 100%; }
   .col-sm-6:last-child {
     margin-top: 1rem; }
+  .login-widget {
+    min-width: 400px; }
+    .login-widget .login-modal .modal-footer button {
+      min-width: 120px; }
   footer {
     min-height: 50px; } }
 

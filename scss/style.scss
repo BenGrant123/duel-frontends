@@ -728,9 +728,6 @@ p.share {
 .login-modal {
 	.modal-footer {
 		padding-bottom: 1.8rem;
-		button {
-			min-width: 120px;
-		}
 	}
 }
 .brand-login-modal {
@@ -808,6 +805,16 @@ p.share {
 	}
 	.col-sm-6:last-child {
 		margin-top: 1rem;
+	}
+	.login-widget {
+		min-width: 400px;
+		.login-modal {
+			.modal-footer {
+				button {
+					min-width: 120px;
+				}
+			}
+		}
 	}
 	footer {
 		min-height: 50px;
