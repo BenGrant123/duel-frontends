@@ -54,6 +54,8 @@ $brand-color: #ff4500;
 .login-widget {
 	position: relative;
 	margin: 0 auto 3.5rem auto;
+	display: flex;
+	flex-wrap: wrap;
 	label {
 		margin-bottom: 0.3rem;
 	}
@@ -65,6 +67,7 @@ $brand-color: #ff4500;
 		border-radius: 4px;
 	}
 	.inner {
+		flex: 0 0 100%;
 		margin-top: 3.5rem;
 		border: 1px solid #eaeaea;
 		border-radius: 4px;
