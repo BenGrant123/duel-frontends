@@ -10,7 +10,7 @@
 
 <?= file_get_contents(__DIR__ . '/static/icons/app-icons.svg') ?>
 
-<?php include 'includes/brand-header.php';?>
+<?php include 'includes/header.php';?>
 	
 	<main class="container">
 		<div class="toolbar">
