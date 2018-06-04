@@ -7862,8 +7862,8 @@ p.share {
     margin-top: 1rem; }
   .login-widget {
     min-width: 400px; }
-    .login-widget .login-modal .modal-footer button {
-      min-width: 120px; }
+  .modal-footer button.btn-primary, .modal-footer button.btn-delete {
+    min-width: 120px; }
   footer {
     min-height: 50px; } }
 

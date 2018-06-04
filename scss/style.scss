@@ -808,11 +808,11 @@ p.share {
 	}
 	.login-widget {
 		min-width: 400px;
-		.login-modal {
-			.modal-footer {
-				button {
-					min-width: 120px;
-				}
+	}
+	.modal-footer {
+		button {
+			&.btn-primary, &.btn-delete {
+				min-width: 120px;
 			}
 		}
 	}
