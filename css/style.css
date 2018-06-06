@@ -7382,70 +7382,70 @@ a.text-dark:hover, a.text-dark:focus {
   .login-widget.brand-login-widget .widget-main form small a {
     color: #ff4500; }
 
-.submission-widget {
+.submission-widget, .settings-widget {
   vertical-align: top;
   position: relative;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 12px; }
-  .submission-widget a:hover {
+  .submission-widget a:hover, .settings-widget a:hover {
     text-decoration: none;
     color: #05b8c1; }
-  .submission-widget .inner {
+  .submission-widget .inner, .settings-widget .inner {
     border: 1px solid #eaeaea;
     border-radius: 4px;
     position: relative; }
-  .submission-widget .dropdown {
+  .submission-widget .dropdown, .settings-widget .dropdown {
     margin-left: auto;
     display: flex; }
-    .submission-widget .dropdown .dropdown-menu {
+    .submission-widget .dropdown button, .settings-widget .dropdown button {
+      background-color: #fff;
+      border: none;
+      padding: 0px 3px; }
+    .submission-widget .dropdown .dropdown-menu, .settings-widget .dropdown .dropdown-menu {
       border: 1px solid #eaeaea;
       border-radius: 4px; }
-    .submission-widget .dropdown a:hover {
+    .submission-widget .dropdown a:hover, .settings-widget .dropdown a:hover {
       color: #05b8c1; }
-  .submission-widget button {
-    background-color: #fff;
-    border: none;
-    padding: 0px 3px; }
-  .submission-widget .widget-header, .submission-widget .widget-main {
+  .submission-widget .widget-header, .submission-widget .widget-main, .settings-widget .widget-header, .settings-widget .widget-main {
     padding: 1rem; }
-  .submission-widget .widget-product {
+  .submission-widget .widget-product, .settings-widget .widget-product {
     padding: 0.75rem 1.2rem 1.2rem 1.2rem;
     color: #222; }
-    .submission-widget .widget-product img {
+    .submission-widget .widget-product img, .settings-widget .widget-product img {
       display: block;
       height: 70px;
       width: 70px;
       border: 1px solid #eaeaea; }
-    .submission-widget .widget-product .text {
+    .submission-widget .widget-product .text, .settings-widget .widget-product .text {
       display: block;
       margin-top: 10px; }
-    .submission-widget .widget-product h3 {
+    .submission-widget .widget-product h3, .settings-widget .widget-product h3 {
       font-size: 12px; }
-    .submission-widget .widget-product .carousel-control-prev, .submission-widget .widget-product .carousel-control-next {
+    .submission-widget .widget-product .carousel-control-prev, .submission-widget .widget-product .carousel-control-next, .settings-widget .widget-product .carousel-control-prev, .settings-widget .widget-product .carousel-control-next {
       bottom: 25px; }
-    .submission-widget .widget-product .carousel-control-prev-icon, .submission-widget .widget-product .carousel-control-next-icon {
+    .submission-widget .widget-product .carousel-control-prev-icon, .submission-widget .widget-product .carousel-control-next-icon, .settings-widget .widget-product .carousel-control-prev-icon, .settings-widget .widget-product .carousel-control-next-icon {
       background-color: black; }
-    .submission-widget .widget-product .carousel-indicators {
+    .submission-widget .widget-product .carousel-indicators, .settings-widget .widget-product .carousel-indicators {
       width: 70px;
       position: static;
       margin: 0.5rem auto; }
-      .submission-widget .widget-product .carousel-indicators li a {
+      .submission-widget .widget-product .carousel-indicators li a, .settings-widget .widget-product .carousel-indicators li a {
         display: block;
         width: 8px;
         height: 8px;
         border-radius: 50%; }
-      .submission-widget .widget-product .carousel-indicators li.active {
+      .submission-widget .widget-product .carousel-indicators li.active, .settings-widget .widget-product .carousel-indicators li.active {
         background-color: #444; }
-    .submission-widget .widget-product .carousel-indicators li {
+    .submission-widget .widget-product .carousel-indicators li, .settings-widget .widget-product .carousel-indicators li {
       width: 10px;
       height: 10px;
       border-radius: 50%;
       background-color: #eaeaea; }
-  .submission-widget .widget-main form {
+  .submission-widget .widget-main form, .settings-widget .widget-main form {
     display: flex;
     flex-wrap: wrap; }
-  .submission-widget .widget-main .form-check {
+  .submission-widget .widget-main .form-check, .settings-widget .widget-main .form-check {
     display: flex;
     flex-shrink: 0;
     align-items: center;
@@ -7454,69 +7454,69 @@ a.text-dark:hover, a.text-dark:focus {
     color: #222;
     margin-bottom: 0.6rem;
     padding-left: 0; }
-  .submission-widget .widget-main .form-check-input, .submission-widget .widget-main .form-check-label {
+  .submission-widget .widget-main .form-check-input, .submission-widget .widget-main .form-check-label, .settings-widget .widget-main .form-check-input, .settings-widget .widget-main .form-check-label {
     align-items: center;
     position: relative;
     width: auto; }
-  .submission-widget .widget-main .form-check-input {
+  .submission-widget .widget-main .form-check-input, .settings-widget .widget-main .form-check-input {
     margin: 0 7px 0 0; }
-  .submission-widget .widget-main .reward {
+  .submission-widget .widget-main .reward, .settings-widget .widget-main .reward {
     font-size: 12px;
     color: #444; }
-  .submission-widget .widget-main .reward:first-child {
+  .submission-widget .widget-main .reward:first-child, .settings-widget .widget-main .reward:first-child {
     padding-top: 0px; }
-  .submission-widget .widget-main .reward:last-child {
+  .submission-widget .widget-main .reward:last-child, .settings-widget .widget-main .reward:last-child {
     padding-bottom: 0px;
     border-bottom: none; }
-  .submission-widget h2 {
+  .submission-widget h2, .settings-widget h2 {
     color: #222;
     font-weight: normal;
     margin-bottom: 0; }
-  .submission-widget .reward {
+  .submission-widget .reward, .settings-widget .reward {
     padding: 0.75rem 0;
     border-bottom: 1px solid #eaeaea; }
-  .submission-widget p.reward-amount {
+  .submission-widget p.reward-amount, .settings-widget p.reward-amount {
     font-weight: bold; }
-  .submission-widget h3 {
+  .submission-widget h3, .settings-widget h3 {
     font-weight: bold;
     font-size: 10px;
     color: #444; }
-  .submission-widget p {
+  .submission-widget p, .settings-widget p {
     margin-bottom: 0; }
-  .submission-widget .testimonial {
+  .submission-widget .testimonial, .settings-widget .testimonial {
     color: #444;
     padding: 0.25rem 1.2rem; }
-  .submission-widget .testimonial-date {
+  .submission-widget .testimonial-date, .settings-widget .testimonial-date {
     position: static;
     margin-top: 0;
     margin-bottom: 3px; }
-  .submission-widget .testimonial-by {
+  .submission-widget .testimonial-by, .settings-widget .testimonial-by {
     padding: 0.2rem 0 1rem 0;
     border-bottom: 1px solid #eaeaea; }
-  .submission-widget .icon-three-dots {
+  .submission-widget .icon-three-dots, .settings-widget .icon-three-dots {
     cursor: pointer;
     margin-left: auto;
     display: flex;
     width: 20px;
     height: 20px;
     fill: #05b8c1; }
-  .submission-widget .toolbar {
+  .submission-widget .toolbar, .settings-widget .toolbar {
     position: relative;
     display: flex;
     align-items: center;
     padding: 0.7rem 1.2rem; }
-  .submission-widget .modals-menu-collapse {
+  .submission-widget .modals-menu-collapse, .settings-widget .modals-menu-collapse {
     position: absolute;
     top: 0;
     right: 0;
     background-color: #222;
     color: #fff;
     width: 100px; }
-    .submission-widget .modals-menu-collapse li a {
+    .submission-widget .modals-menu-collapse li a, .settings-widget .modals-menu-collapse li a {
       padding: 0rem 1rem 0.5rem 1rem; }
-    .submission-widget .modals-menu-collapse li a, .submission-widget .modals-menu-collapse li a:hover {
+    .submission-widget .modals-menu-collapse li a, .submission-widget .modals-menu-collapse li a:hover, .settings-widget .modals-menu-collapse li a, .settings-widget .modals-menu-collapse li a:hover {
       color: #fff; }
-    .submission-widget .modals-menu-collapse li:first-child a {
+    .submission-widget .modals-menu-collapse li:first-child a, .settings-widget .modals-menu-collapse li:first-child a {
       padding-top: 0.5rem; }
 
 .submission-widget:nth-child(2) .widget-header {
@@ -7525,10 +7525,43 @@ a.text-dark:hover, a.text-dark:focus {
 .submission-widget:nth-child(3) .widget-header {
   border-bottom: 2px solid #f0c418; }
 
-.submission-widget:nth-child(2) .widget-header, .submission-widget:nth-child(3) .widget-header {
+.settings-widget button {
+  width: 100%;
+  font-size: 12px; }
+  .settings-widget button.btn-primary, .settings-widget button.btn-primary:hover {
+    color: #fff; }
+
+.settings-widget .form-group {
+  width: 100%; }
+  .settings-widget .form-group input {
+    width: 100%; }
+
+.settings-widget .default-profile {
+  fill: #fff;
+  background-color: #eaeaea;
+  width: 138px !important;
+  min-width: 138px !important;
+  height: 138px !important;
+  margin-right: 1rem; }
+
+.settings-widget:nth-child(1) .widget-header {
+  border-bottom: 2px solid #05b8c1; }
+
+.settings-widget:nth-child(1) button.btn-primary, .settings-widget:nth-child(1) button.btn-primary:hover {
+  background-color: #05b8c1;
+  border-color: #05b8c1; }
+
+.settings-widget:nth-child(2) .widget-header {
+  border-bottom: 2px solid #e8634b; }
+
+.settings-widget:nth-child(2) button.btn-primary, .settings-widget:nth-child(2) button.btn-primary:hover {
+  background-color: #e8634b;
+  border-color: #e8634b; }
+
+.submission-widget:nth-child(2) .widget-header, .submission-widget:nth-child(3) .widget-header, .settings-widget .widget-header {
   vertical-align: middle; }
 
-.submission-widget:nth-child(2) h2, .submission-widget:nth-child(3) h2 {
+.submission-widget:nth-child(2) h2, .submission-widget:nth-child(3) h2, .settings-widget h2 {
   position: static;
   transform: none;
   font-size: 16px;
@@ -7601,6 +7634,11 @@ header {
     font-size: 12px;
     color: #444444;
     font-size: 16px; }
+
+.container .settings-widget .toolbar {
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  align-items: flex-end; }
 
 .container .row {
   display: flex; }
@@ -7729,15 +7767,21 @@ h2 {
   font-size: 10px;
   color: #05b8c1; }
 
-p.share {
+p.share, p.upload-profile {
   margin: 0;
   border: 1px solid #05b8c1;
   border-radius: 4px;
   font-size: 12px;
   color: #222;
   display: flex;
-  width: 100px;
   padding: 5px 10px; }
+
+p.upload-profile {
+  width: 138px;
+  margin-top: 1rem; }
+
+p .share {
+  width: 100px; }
 
 .modal-header {
   border-bottom: 2px solid #01b8d7; }
@@ -7862,6 +7906,8 @@ p.share {
     margin-top: 1rem; }
   .login-widget {
     min-width: 400px; }
+  .settings-widget:last-child {
+    margin-top: 0; }
   .modal-footer button.btn-primary, .modal-footer button.btn-delete {
     min-width: 120px; }
   footer {
@@ -7878,6 +7924,9 @@ p.share {
     width: 100%; }
   .col-sm-6, .col-sm-6:last-child {
     margin-top: 0; }
+  .settings-widget {
+    flex: 0 0 33.33%;
+    max-width: 33.33%; }
   footer .left-items, footer .right-items {
     flex-wrap: nowrap; }
   footer .copyright {
@@ -7889,7 +7938,12 @@ p.share {
   .col-lg-1-5 {
     flex: 0 0 20%;
     max-width: 20%;
-    width: 100%; } }
+    width: 100%; }
+  .container .settings-widget .toolbar {
+    flex-wrap: nowrap; }
+  .container .settings-widget p.upload-profile {
+    margin-bottom: 0;
+    width: auto; } }
 
 @media (min-width: 1200px) {
   .col-xl-1-5 {
