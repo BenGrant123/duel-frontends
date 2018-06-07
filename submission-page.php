@@ -160,13 +160,12 @@
 							<p>Some information about the reward</p>
 						</div>
 					</div>
-				<div>
+				</div>
 			</div>
 			
 		</div><!-- /row -->
 	</main>
 	<?php include 'includes/modals/submission-page.php';?>
-	</div>
 	<?php include 'includes/footer.php';?>
 
 </body>
