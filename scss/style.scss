@@ -191,10 +191,10 @@ $brand-color: #ff4500;
 			height: 70px;
 			width: 70px;
 			border: 1px solid #eaeaea;
+			margin-bottom: 10px;
 		}
 		.text {
 			display: block;
-			margin-top: 10px;
 		}
 		color: #222;
 		h3 {
@@ -476,6 +476,7 @@ header {
 }
 
 .container {
+	margin-bottom: 3rem;
 	.toolbar {
 		display: flex;
 		margin-bottom: 2rem;
@@ -654,9 +655,10 @@ h2 {
 .testimonial-more {
 	
 }
-p {
+button {
 	&.share, &.upload-profile {
 		margin: 0;
+		background-color: #fff;
 		border: 1px solid #05b8c1;
 		border-radius: 4px;
 		font-size: 12px;
@@ -668,10 +670,6 @@ p {
 		width: 138px;
 		margin-top: 1rem;
 	}
-	.share {
-		width: 100px;
-	}
-	
 }
 
 // Modals
@@ -834,7 +832,6 @@ p {
 				float: left;
 			}
 			.text {
-				margin-top: 0;
 				float: right;
 				width: 250px;
 			}
@@ -868,6 +865,13 @@ p {
 	}
 	.login-widget, {
 		min-width: 400px;
+	}
+	.submission-widget {
+		.widget-product {
+			.text {
+				float: left;
+			}
+		}
 	}
 	.settings-widget:last-child {
 		margin-top: 0;
@@ -923,7 +927,7 @@ p {
 			.toolbar {
 				flex-wrap: nowrap;
 			}
-			p.upload-profile {
+			button.upload-profile {
 				margin-bottom: 0;
 				width: auto;
 			}
@@ -941,5 +945,35 @@ p {
 	.container {
 		width: 90%;
 		max-width: none;
+		.submission-widget {
+			.widget-product {
+				.text {
+					float: right;
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1600px) {
+	.container {
+		.submission-widget {
+			.widget-product {
+				.text {
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1750px) {
+	.container {
+		.submission-widget {
+			.widget-product {
+				.text {
+					width: 80%;
+				}
+			}
+		}
 	}
 }

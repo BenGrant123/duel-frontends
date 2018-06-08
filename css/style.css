@@ -7416,10 +7416,10 @@ a.text-dark:hover, a.text-dark:focus {
       display: block;
       height: 70px;
       width: 70px;
-      border: 1px solid #eaeaea; }
+      border: 1px solid #eaeaea;
+      margin-bottom: 10px; }
     .submission-widget .widget-product .text, .settings-widget .widget-product .text {
-      display: block;
-      margin-top: 10px; }
+      display: block; }
     .submission-widget .widget-product h3, .settings-widget .widget-product h3 {
       font-size: 12px; }
     .submission-widget .widget-product .carousel-control-prev, .submission-widget .widget-product .carousel-control-next, .settings-widget .widget-product .carousel-control-prev, .settings-widget .widget-product .carousel-control-next {
@@ -7622,26 +7622,26 @@ header {
     color: #fff;
     text-transform: uppercase; }
 
-.container .toolbar {
-  display: flex;
-  margin-bottom: 2rem; }
-  .container .toolbar .rail-select {
-    width: 200px;
-    margin-left: auto;
+.container {
+  margin-bottom: 3rem; }
+  .container .toolbar {
+    display: flex;
+    margin-bottom: 2rem; }
+    .container .toolbar .rail-select {
+      width: 200px;
+      margin-left: auto;
+      display: flex; }
+    .container .toolbar .form-control {
+      border: 1px solid #eaeaea;
+      font-size: 12px;
+      color: #444444;
+      font-size: 16px; }
+  .container .settings-widget .toolbar {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    align-items: flex-end; }
+  .container .row {
     display: flex; }
-  .container .toolbar .form-control {
-    border: 1px solid #eaeaea;
-    font-size: 12px;
-    color: #444444;
-    font-size: 16px; }
-
-.container .settings-widget .toolbar {
-  flex-wrap: wrap;
-  margin-bottom: 0;
-  align-items: flex-end; }
-
-.container .row {
-  display: flex; }
 
 footer {
   position: absolute;
@@ -7767,8 +7767,9 @@ h2 {
   font-size: 10px;
   color: #05b8c1; }
 
-p.share, p.upload-profile {
+button.share, button.upload-profile {
   margin: 0;
+  background-color: #fff;
   border: 1px solid #05b8c1;
   border-radius: 4px;
   font-size: 12px;
@@ -7776,12 +7777,9 @@ p.share, p.upload-profile {
   display: flex;
   padding: 5px 10px; }
 
-p.upload-profile {
+button.upload-profile {
   width: 138px;
   margin-top: 1rem; }
-
-p .share {
-  width: 100px; }
 
 .modal-header {
   border-bottom: 2px solid #01b8d7; }
@@ -7887,7 +7885,6 @@ p .share {
   .submission-widget .widget-product img {
     float: left; }
   .submission-widget .widget-product .text {
-    margin-top: 0;
     float: right;
     width: 250px; } }
 
@@ -7906,6 +7903,8 @@ p .share {
     margin-top: 1rem; }
   .login-widget {
     min-width: 400px; }
+  .submission-widget .widget-product .text {
+    float: left; }
   .settings-widget:last-child {
     margin-top: 0; }
   .modal-footer button.btn-primary, .modal-footer button.btn-delete {
@@ -7941,7 +7940,7 @@ p .share {
     width: 100%; }
   .container .settings-widget .toolbar {
     flex-wrap: nowrap; }
-  .container .settings-widget p.upload-profile {
+  .container .settings-widget button.upload-profile {
     margin-bottom: 0;
     width: auto; } }
 
@@ -7954,4 +7953,15 @@ p .share {
 @media (min-width: 1350px) {
   .container {
     width: 90%;
-    max-width: none; } }
+    max-width: none; }
+    .container .submission-widget .widget-product .text {
+      float: right;
+      width: 70%; } }
+
+@media (min-width: 1600px) {
+  .container .submission-widget .widget-product .text {
+    width: 70%; } }
+
+@media (min-width: 1750px) {
+  .container .submission-widget .widget-product .text {
+    width: 80%; } }

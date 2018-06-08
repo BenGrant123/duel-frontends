@@ -34,7 +34,7 @@
 						<svg class="default-profile">
 					    	<use xlink:href="#icon-default-profile"></use>
 					  	</svg>
-						<p class="upload-profile">Upload a profile pic</p>
+						<button class="upload-profile">Upload a profile pic</button>
 					</div>
 
 					

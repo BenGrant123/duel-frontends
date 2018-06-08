@@ -27,7 +27,7 @@
 					
 					<h2>Cineworld</h2>
 					<div class="toolbar">
-						<p class="share">share</p>
+						<button class="share">share</button>
 						<div class="dropdown">
 						  <button id="dropdownMenuButton" data-toggle="dropdown">
 							  <svg class="icon icon-three-dots" width="20" height="20" aria-haspopup="true" aria-expanded="false">
